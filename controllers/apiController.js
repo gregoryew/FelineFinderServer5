@@ -39,7 +39,7 @@ module.exports = function(app) {
             if (err) throw err;
             
             res.send(search);
-        }); 
+        });
     })
 
     app.get('/api/search/:id', function(req, res) {
@@ -65,7 +65,7 @@ module.exports = function(app) {
                 query: null             
             }, function(err, search) {
                 if (err) throw err;
-                s3.uploadFile('ff-saved-queries', `${search.id}.json`, JSON.stringify(query, null, 2));
+                s3.uploadFile('ff-saved-queries', `${search.id}.json`, JSON.stringify(query));
                 //fs.writeFileSync(appRoot + `\queries\${search.id}.json`, JSON.stringify(query))
                 res.send('Success');
             });
@@ -84,7 +84,7 @@ module.exports = function(app) {
            });
            newSearch.save(function(err, search) {
                if (err) throw err;
-               s3.uploadFile('ff-saved-queries', `${search.id}.json`, JSON.stringify(query, null, 2));
+               s3.uploadFile('ff-saved-queries', `${search.id}.json`, JSON.stringify(query));
                //fs.writeFile(appRoot + `\queries\${search.id}.json`, JSON.stringify(query))
                res.send('Success');
            });
