@@ -4,6 +4,7 @@ const rq = require('aif-request');
 const fs = require('fs');
 const appRoot = require('app-root-path');
 const axios = require('axios');
+const s3 = require('./s3.js');
 
 module.exports = function(app) {
     
@@ -15,7 +16,7 @@ module.exports = function(app) {
             if (err) throw err;
             
             for (search of searches) {
-            fs.readFile(appRoot + '/queries/' + search.id + '.json', function (err, data) {
+            fs.readFile('https://codepipeline-us-east-2-861262349290.s3.us-east-2.amazonaws.com/ff-saved-queries/' + search.id + '.json', function (err, data) {
                 let query = JSON.parse(data);
                 axios.post('https://api.rescuegroups.org/http/v2.json', query)
                   .then(function (response) {
@@ -30,7 +31,15 @@ module.exports = function(app) {
     });
     
     app.get('/test', function (req, res) {
-        res.send("Test");
+        res.send("Can access API");
+    })
+
+    app.get('/mongodb-test', function (req, res) {
+        Searches.find({}, function(err, search) {
+            if (err) throw err;
+            
+            res.send(search);
+        }); 
     })
 
     app.get('/api/search/:id', function(req, res) {
@@ -56,7 +65,8 @@ module.exports = function(app) {
                 query: null             
             }, function(err, search) {
                 if (err) throw err;
-                fs.writeFileSync(appRoot + `\queries\${search.id}.json`, JSON.stringify(query))
+                s3.uploadFile('ff-saved-queries', `${search.id}.json`, JSON.stringify(query, null, 2));
+                //fs.writeFileSync(appRoot + `\queries\${search.id}.json`, JSON.stringify(query))
                 res.send('Success');
             });
         }
@@ -74,7 +84,8 @@ module.exports = function(app) {
            });
            newSearch.save(function(err, search) {
                if (err) throw err;
-               fs.writeFile(appRoot + `\queries\${search.id}.json`, JSON.stringify(query))
+               s3.uploadFile('ff-saved-queries', `${search.id}.json`, JSON.stringify(query, null, 2));
+               //fs.writeFile(appRoot + `\queries\${search.id}.json`, JSON.stringify(query))
                res.send('Success');
            });
             
