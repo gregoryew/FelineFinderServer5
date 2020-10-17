@@ -53,7 +53,7 @@ module.exports = function(app) {
     });
     
     app.post('/api/search', function(req, res) {
-        const query = req.body.query;
+        const query2 = req.body.query;
         if (req.body.id) {
             Search.findByIdAndUpdate(req.body.id, {
                 name: req.body.name,
@@ -65,7 +65,7 @@ module.exports = function(app) {
                 query: null             
             }, function(err, search) {
                 if (err) throw err;
-                s3.uploadFile('ff-saved-queries', `${search.id}.json`, JSON.stringify(query));
+                s3.uploadFile('ff-saved-queries', `${search.id}.json`, query2);
                 //fs.writeFileSync(appRoot + `\queries\${search.id}.json`, JSON.stringify(query))
                 res.send('Success');
             });
@@ -84,7 +84,7 @@ module.exports = function(app) {
            });
            newSearch.save(function(err, search) {
                if (err) throw err;
-               s3.uploadFile('ff-saved-queries', `${search.id}.json`, JSON.stringify(query));
+               s3.uploadFile('ff-saved-queries', `${search.id}.json`, query2);
                //fs.writeFile(appRoot + `\queries\${search.id}.json`, JSON.stringify(query))
                res.send('Success');
            });

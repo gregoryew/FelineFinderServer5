@@ -10,9 +10,9 @@ const uploadFile = (bucketName, fileName, query) => {
     const params = {
         Bucket: bucketName, // pass your bucket name
         Key:  fileName, // file will be saved as testBucket/contacts.csv
-        Body: query
+        Body: JSON.stringify(query)
     };
-    console.log('!!!!!! query = ' + query);
+    console.log('!!!!!! query = ' + JSON.stringify(query));
     console.log('********** Params = ' + JSON.stringify(params));
     console.log('********** S3 = ' + JSON.stringify(s3));
     s3.upload(params, function(s3Err, data) {
