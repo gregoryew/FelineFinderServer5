@@ -54,6 +54,8 @@ module.exports = function(app) {
     
     app.post('/api/search', function(req, res) {
         const query2 = req.body.query;
+        console.log('REQ = ' + JSON.stringify(req));
+        console.log('QUERY2 = ' + JSON.stringify(query2));
         if (req.body.id) {
             Search.findByIdAndUpdate(req.body.id, {
                 name: req.body.name,
