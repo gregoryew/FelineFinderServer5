@@ -6,12 +6,13 @@ const s3 = new AWS.S3({
   secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
 });
 
-const uploadFile = (bucketName, fileName, body) => {
+const uploadFile = (bucketName, fileName, query) => {
     const params = {
         Bucket: bucketName, // pass your bucket name
         Key:  fileName, // file will be saved as testBucket/contacts.csv
-        Body: body
+        Body: query
     };
+    console.log('!!!!!! query = ' + query);
     console.log('********** Params = ' + JSON.stringify(params));
     console.log('********** S3 = ' + JSON.stringify(s3));
     s3.upload(params, function(s3Err, data) {
