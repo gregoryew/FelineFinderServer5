@@ -12,8 +12,8 @@ const uploadFile = (bucketName, fileName, body) => {
         Key:  fileName, // file will be saved as testBucket/contacts.csv
         Body: body
     };
-    console.log('********** Params = ' + params);
-    console.log('********** S3 = ' + s3);
+    console.log('********** Params = ' + JSON.stringify(params);
+    console.log('********** S3 = ' + JSON.stringify(s3);
     s3.upload(params, function(s3Err, data) {
         if (s3Err) throw s3Err
         return `File uploaded successfully at ${data.Location}`;
