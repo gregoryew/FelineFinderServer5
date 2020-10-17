@@ -24,22 +24,15 @@ module.exports = function(app) {
                   .catch(function (error) {
                     console.log(error);
                   });
-                /*
-                rq.postJson('https://api.rescuegroups.org/http/v2.json', query, function(rs, err) {
-                    if (err) throw err
-                    if (rs && rs.rowsFound > 0) {
-                        console.log(rs);
-                        //send sns
-                        //update search
-                    }
-                    res.send(search);
-                })
-                */
             });
         }
-        }); 
+       }); 
     });
     
+    app.get('/test', function (req, res) {
+        res.send("Test");
+    })
+
     app.get('/api/search/:id', function(req, res) {
        
        Searches.findById({ _id: req.params.id }, function(err, search) {
