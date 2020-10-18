@@ -28,7 +28,7 @@ const downloadFile = (bucketName, fileName) => {
         Key:  fileName, // file will be saved as testBucket/contacts.csv
     };
     s3.getObject(params, function(err, data) {
-        if (err) console.log(err, err.stack); // an error occurred
+        if (err) {console.log(err, err.stack);} // an error occurred
         else return data           // successful response
     });
 };
