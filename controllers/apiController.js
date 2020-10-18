@@ -18,12 +18,15 @@ module.exports = function(app) {
             for (search of searches) {
             fs.readFile('https://ff-saved-queries.s3.us-east-2.amazonaws.com/' + search.id + '.json', function (err, data) {
                 let query = JSON.parse(data);
+                console.log('-----------------------------');
+                console.log('Sending query to rescue groups');
                 axios.post('https://api.rescuegroups.org/http/v2.json', query)
                   .then(function (response) {
+                    console.log('SUCCESS RESPONSE = ' + JSON.stringify(response));
                     if(response && response.data && response.data.foundRows) {res.send({foundRows: response.data.foundRows})};
                   })
                   .catch(function (error) {
-                    console.log(error);
+                    console.log('ERROR = ' + error);
                   });
             });
         }
