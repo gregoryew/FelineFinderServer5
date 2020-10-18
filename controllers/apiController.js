@@ -19,6 +19,8 @@ module.exports = function(app) {
                 s3.downloadFile('ff-saved-queries', search.id + '.json', function(err, data) {
                 //fs.readFile('https://ff-saved-queries.s3.us-east-2.amazonaws.com/' + search.id + '.json', function (err, data) {
                 if (err) {console.log('PROCESS SEARCH ERROR = ' + err);}
+                console.log("DATA = " + data)
+                console.log("DATA = " + JSON.stringify(data))
                 let query = JSON.parse(data);
                 console.log('-----------------------------');
                 console.log('Sending query to rescue groups');
