@@ -1,9 +1,11 @@
 const AWS = require('aws-sdk');
-const fs = require('fs');
 
 const s3 = new AWS.S3({
+  apiVersion: "2010-12-01",
   accessKeyId: process.env.AWS_ACCESS_KEY,
-  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
+  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+  region: "us-east-2",
+  AWS_SDK_LOAD_CONFIG=1
 });
 
 const uploadFile = (bucketName, fileName, query) => {
@@ -32,3 +34,4 @@ const downloadFile = (bucketName, fileName, callback) => {
 };
 
 module.exports.uploadFile = uploadFile
+module.exports.downloadFile = downloadFile
