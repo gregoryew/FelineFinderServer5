@@ -21,8 +21,7 @@ module.exports = function(app) {
                 if (err) {console.log('PROCESS SEARCH ERROR = ' + err);}
                 console.log("DATA = " + JSON.stringify(data));
                 query = data.toString('utf-8');
-                console.log("QUERY = " + JSON.stringify(query));
-                console.log('-----------------------------');
+                console.log('=================================');
                 console.log('Sending query to rescue groups');
                 console.log('QUERY = ' & JSON.stringify(query));
                 axios.post('https://api.rescuegroups.org/http/v2.json', query)
