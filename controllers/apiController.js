@@ -23,7 +23,7 @@ module.exports = function(app) {
                 query = data.toString('utf-8');
                 console.log('=================================');
                 console.log('Sending query to rescue groups');
-                console.log('QUERY = ' & JSON.stringify(query));
+                console.log('QUERY = ' & query);
                 axios.post('https://api.rescuegroups.org/http/v2.json', query)
                   .then(function (response) {
                     console.log('SUCCESS RESPONSE = ' + JSON.stringify(response));
