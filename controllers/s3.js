@@ -21,14 +21,13 @@ const uploadFile = (bucketName, fileName, query) => {
     });
 };
 
-const downloadFile = (bucketName, fileName) => {
+const downloadFile = (bucketName, fileName, callback) => {
     const params = {
         Bucket: bucketName, // pass your bucket name
         Key:  fileName, // file will be saved as testBucket/contacts.csv
     };
     s3.getObject(params, function(err, data) {
-        if (err) {console.log(err, err.stack);} // an error occurred
-        else return data           // successful response
+        callback(err, data)           // successful response
     });
 };
 
