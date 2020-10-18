@@ -11,7 +11,7 @@ app.use('/assets', express.static(__dirname + '/public'));
 
 app.set('view engine', 'ejs');
 
-const uri = "mongodb+srv://admin:GEW2020gew$16@felinefinder.f0gql.mongodb.net/FelineFinderServer?retryWrites=true&w=majority"
+const uri = process.env.MONGODBURI
 
 mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true });
 const connection = mongoose.connection;
