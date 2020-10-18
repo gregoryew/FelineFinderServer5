@@ -20,7 +20,7 @@ module.exports = function(app) {
                 //fs.readFile('https://ff-saved-queries.s3.us-east-2.amazonaws.com/' + search.id + '.json', function (err, data) {
                 if (err) {console.log('PROCESS SEARCH ERROR = ' + err);}
                 console.log("DATA = " + JSON.stringify(data));
-                query = data.toString('utf-8');
+                query = data.Body.data.toString('utf-8');
                 console.log('=================================');
                 console.log('Sending query to rescue groups');
                 console.log('QUERY = ' & query);
