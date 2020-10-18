@@ -16,7 +16,7 @@ module.exports = function(app) {
             if (err) throw err;
             
             for (search of searches) {
-            fs.readFile('https://codepipeline-us-east-2-861262349290.s3.us-east-2.amazonaws.com/ff-saved-queries/' + search.id + '.json', function (err, data) {
+            fs.readFile('https://ff-saved-queries.s3.us-east-2.amazonaws.com/' + search.id + '.json', function (err, data) {
                 let query = JSON.parse(data);
                 axios.post('https://api.rescuegroups.org/http/v2.json', query)
                   .then(function (response) {
