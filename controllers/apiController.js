@@ -20,13 +20,14 @@ module.exports = function(app) {
                 //fs.readFile('https://ff-saved-queries.s3.us-east-2.amazonaws.com/' + search.id + '.json', function (err, data) {
                 if (err) {console.log('PROCESS SEARCH ERROR = ' + err);}
                 console.log("DATA = " + JSON.stringify(data));
-                query = data.Body.data.toString('utf-8');
+                query = data.Body.toString('utf-8');
                 console.log('=================================');
                 console.log('Sending query to rescue groups');
                 console.log('QUERY = ' & query);
+                query = JSON.parse(query);
                 axios.post('https://api.rescuegroups.org/http/v2.json', query)
                   .then(function (response) {
-                    console.log('SUCCESS RESPONSE = ' + JSON.stringify(response));
+                    //console.log('SUCCESS RESPONSE = ' + response);
                     if(response && response.data && response.data.foundRows) {res.send({foundRows: response.data.foundRows})};
                   })
                   .catch(function (error) {
