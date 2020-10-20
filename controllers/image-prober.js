@@ -6,7 +6,7 @@ module.exports = function(app) {
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: true }));
     
-    app.get('/api/sizeImages', function(req, res) {
+    app.post('/api/sizeImages', function(req, res) {
         let imageArr = res.body.imageArray;
         let results = [];
         for (image of imageArr) {
