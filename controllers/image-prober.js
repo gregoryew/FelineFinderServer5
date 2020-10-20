@@ -7,7 +7,7 @@ module.exports = function(app) {
     app.use(bodyParser.urlencoded({ extended: true }));
 
     app.post('/api/sizeImages', function(req, res) {
-        let imageArr = res.body.imageArray;
+        let imageArr = req.body.imageArray;
         let results = [];
         for (image of imageArr) {
             probe(image).then(result => {
