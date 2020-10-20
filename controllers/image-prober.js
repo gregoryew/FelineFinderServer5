@@ -12,8 +12,10 @@ module.exports = function(app) {
         for (image of imageArr) {
             probe(image).then(result => {
                 results.push({URL: result.url, width: result.width, height: result.height});
+                if (results.length == imageArr.length) {
+                    res.send(results);
+                }
             })
         }
-        res.send(results);
     });
 }
