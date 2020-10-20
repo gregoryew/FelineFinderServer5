@@ -13,7 +13,7 @@ module.exports = function(app) {
             probe(image).then(result => {
                 results.push({URL: result.url, width: result.width, height: result.height});
                 if (results.length == imageArr.length) {
-                    res.send(results);
+                    res.send({ImageArray: results});
                 }
             })
         }
