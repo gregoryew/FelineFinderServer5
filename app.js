@@ -4,6 +4,7 @@ var mongoose = require('mongoose');
 var config = require('./config');
 var setupController = require('./controllers/setupController');
 var apiController = require('./controllers/apiController');
+var imageProber = request('./controller/image-prober');
 
 var port = process.env.PORT || 3000;
 
@@ -22,5 +23,6 @@ connection.once('open', () => {
 //mongoose.connect(config.getDbConnectionString());
 setupController(app);
 apiController(app);
+imageProber(app);
 
 app.listen(port);
