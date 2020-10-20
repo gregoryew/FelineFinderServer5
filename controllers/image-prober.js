@@ -1,11 +1,11 @@
 const bodyParser = require('body-parser');
-var probe = require('probe-image-size');
+const probe = require('probe-image-size');
 
 module.exports = function(app) {
     
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: true }));
-    
+
     app.post('/api/sizeImages', function(req, res) {
         let imageArr = res.body.imageArray;
         let results = [];
@@ -15,5 +15,5 @@ module.exports = function(app) {
             })
         }
         res.send(results);
-    }
+    });
 }

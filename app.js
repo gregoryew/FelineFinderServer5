@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 var config = require('./config');
 var setupController = require('./controllers/setupController');
 var apiController = require('./controllers/apiController');
-var imageProber = request('./controller/image-prober');
+var imageProber = require('./controllers/image-prober');
 
 var port = process.env.PORT || 3000;
 
