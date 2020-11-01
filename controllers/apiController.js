@@ -5,12 +5,18 @@ const fs = require('fs');
 const appRoot = require('app-root-path');
 const axios = require('axios');
 const s3 = require('./s3.js');
+const sendPush = require('./sendPush.js');
 
 module.exports = function(app) {
     
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: true }));
     
+    app.get('/api/pushTest', function(req, res) {
+        sendPush.sendPushTest()
+        res.send('Push Sent');
+    })
+
     app.get('/api/search/process', function(req, res) {
         Searches.find({ $or : [  {  sentPush : null }, {sentPush: {$gt:new Date(Date.now() - 24*60*60 * 1000)}} ] }, function(err, searches) {
             if (err) throw err;

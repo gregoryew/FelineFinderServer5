@@ -7,6 +7,8 @@ module.exports = function(app) {
     
    app.get('/api/setupSearches', function(req, res) {
        
+        const apiKey = process.env.APIKEY
+
        // seed database
        var starterSearches = [
            {
@@ -16,7 +18,7 @@ module.exports = function(app) {
             times: 0,
             success: null,
             sentPush: null,
-            query: {"apikey": "0doJkmYU", "search": {"resultStart": "0", "resultSort": "animalLocationDistance", "resultOrder": "asc", "resultLimit": "25", "calcFoundRows": "Yes", "filters": [{"criteria": ["9"], "fieldName": "animalPrimaryBreedID", "operation": "equals"}, {"criteria": "Adopted", "fieldName": "animalStatus", "operation": "notequals"}, {"criteria": "cat", "fieldName": "animalSpecies", "operation": "equals"}, {"fieldName": "animalLocationDistance", "criteria": "4000", "operation": "radius"}, {"operation": "equals", "criteria": "94608", "fieldName": "animalLocation"}], "fields": ["animalID", "animalName", "animalBreed", "animalGeneralAge", "animalSex", "animalPrimaryBreed", "animalUpdatedDate", "animalOrgID", "animalLocationDistance", "animalLocationCitystate", "animalPictures", "animalStatus", "animalBirthdate", "animalAvailableDate", "animalGeneralSizePotential", "animalVideoUrls"]}, "objectType": "animals", "objectAction": "publicSearch"} 
+            query: {"apikey": apiKey, "search": {"resultStart": "0", "resultSort": "animalLocationDistance", "resultOrder": "asc", "resultLimit": "25", "calcFoundRows": "Yes", "filters": [{"criteria": ["9"], "fieldName": "animalPrimaryBreedID", "operation": "equals"}, {"criteria": "Adopted", "fieldName": "animalStatus", "operation": "notequals"}, {"criteria": "cat", "fieldName": "animalSpecies", "operation": "equals"}, {"fieldName": "animalLocationDistance", "criteria": "4000", "operation": "radius"}, {"operation": "equals", "criteria": "94608", "fieldName": "animalLocation"}], "fields": ["animalID", "animalName", "animalBreed", "animalGeneralAge", "animalSex", "animalPrimaryBreed", "animalUpdatedDate", "animalOrgID", "animalLocationDistance", "animalLocationCitystate", "animalPictures", "animalStatus", "animalBirthdate", "animalAvailableDate", "animalGeneralSizePotential", "animalVideoUrls"]}, "objectType": "animals", "objectAction": "publicSearch"} 
            },
            {
             name: 'Abyssinian',
@@ -25,7 +27,7 @@ module.exports = function(app) {
             times: 0,
             success: null,
             sentPush: null,
-            query: {"apikey": "0doJkmYU", "search": {"resultStart": "0", "resultSort": "animalLocationDistance", "resultOrder": "asc", "resultLimit": "25", "calcFoundRows": "Yes", "filters": [{"criteria": ["1"], "fieldName": "animalPrimaryBreedID", "operation": "equals"}, {"criteria": "Adopted", "fieldName": "animalStatus", "operation": "notequals"}, {"criteria": "cat", "fieldName": "animalSpecies", "operation": "equals"}, {"fieldName": "animalLocationDistance", "criteria": "4000", "operation": "radius"}, {"operation": "equals", "criteria": "94608", "fieldName": "animalLocation"}], "fields": ["animalID", "animalName", "animalBreed", "animalGeneralAge", "animalSex", "animalPrimaryBreed", "animalUpdatedDate", "animalOrgID", "animalLocationDistance", "animalLocationCitystate", "animalPictures", "animalStatus", "animalBirthdate", "animalAvailableDate", "animalGeneralSizePotential", "animalVideoUrls"]}, "objectType": "animals", "objectAction": "publicSearch"} 
+            query: {"apikey": apiKey, "search": {"resultStart": "0", "resultSort": "animalLocationDistance", "resultOrder": "asc", "resultLimit": "25", "calcFoundRows": "Yes", "filters": [{"criteria": ["1"], "fieldName": "animalPrimaryBreedID", "operation": "equals"}, {"criteria": "Adopted", "fieldName": "animalStatus", "operation": "notequals"}, {"criteria": "cat", "fieldName": "animalSpecies", "operation": "equals"}, {"fieldName": "animalLocationDistance", "criteria": "4000", "operation": "radius"}, {"operation": "equals", "criteria": "94608", "fieldName": "animalLocation"}], "fields": ["animalID", "animalName", "animalBreed", "animalGeneralAge", "animalSex", "animalPrimaryBreed", "animalUpdatedDate", "animalOrgID", "animalLocationDistance", "animalLocationCitystate", "animalPictures", "animalStatus", "animalBirthdate", "animalAvailableDate", "animalGeneralSizePotential", "animalVideoUrls"]}, "objectType": "animals", "objectAction": "publicSearch"} 
            },
            {
             name: 'Unknown',
@@ -34,7 +36,7 @@ module.exports = function(app) {
             times: 0,
             success: null,
             sentPush: null,
-            query: {"apikey": "0doJkmYU", "search": {"resultStart": "0", "resultSort": "animalLocationDistance", "resultOrder": "asc", "resultLimit": "25", "calcFoundRows": "Yes", "filters": [{"criteria": ["22"], "fieldName": "animalPrimaryBreedID", "operation": "equals"}, {"criteria": "Adopted", "fieldName": "animalStatus", "operation": "notequals"}, {"criteria": "cat", "fieldName": "animalSpecies", "operation": "equals"}, {"fieldName": "animalLocationDistance", "criteria": "4000", "operation": "radius"}, {"operation": "equals", "criteria": "94608", "fieldName": "animalLocation"}], "fields": ["animalID", "animalName", "animalBreed", "animalGeneralAge", "animalSex", "animalPrimaryBreed", "animalUpdatedDate", "animalOrgID", "animalLocationDistance", "animalLocationCitystate", "animalPictures", "animalStatus", "animalBirthdate", "animalAvailableDate", "animalGeneralSizePotential", "animalVideoUrls"]}, "objectType": "animals", "objectAction": "publicSearch"}
+            query: {"apikey": apiKey, "search": {"resultStart": "0", "resultSort": "animalLocationDistance", "resultOrder": "asc", "resultLimit": "25", "calcFoundRows": "Yes", "filters": [{"criteria": ["22"], "fieldName": "animalPrimaryBreedID", "operation": "equals"}, {"criteria": "Adopted", "fieldName": "animalStatus", "operation": "notequals"}, {"criteria": "cat", "fieldName": "animalSpecies", "operation": "equals"}, {"fieldName": "animalLocationDistance", "criteria": "4000", "operation": "radius"}, {"operation": "equals", "criteria": "94608", "fieldName": "animalLocation"}], "fields": ["animalID", "animalName", "animalBreed", "animalGeneralAge", "animalSex", "animalPrimaryBreed", "animalUpdatedDate", "animalOrgID", "animalLocationDistance", "animalLocationCitystate", "animalPictures", "animalStatus", "animalBirthdate", "animalAvailableDate", "animalGeneralSizePotential", "animalVideoUrls"]}, "objectType": "animals", "objectAction": "publicSearch"}
           }
        ];
        Searches.remove({});

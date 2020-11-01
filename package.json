@@ -9,14 +9,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@parse/node-apn": "^4.0.0",
     "aif-request": "0.0.2",
+    "apn": "^2.2.0",
     "app-root-path": "^3.0.0",
-    "aws-sdk": "^2.773.0",
+    "aws-sdk": "^2.778.0",
     "axios": "^0.20.0",
     "body-parser": "^1.15.0",
     "ejs": "^2.4.1",
     "express": "^4.13.4",
-    "image-size": "^0.9.2",
     "mongoose": "^5.10.9",
     "path": "^0.12.7",
     "probe-image-size": "^5.0.0"
