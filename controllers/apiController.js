@@ -34,7 +34,8 @@ module.exports = function(app) {
                 console.log('=================================');
                 console.log('Sending query to rescue groups');
                 console.log('--------------');
-                console.log('QUERY = ' & query);
+                console.log('DATA = ' + data.Body.data);
+                console.log('QUERY = ' + query);
                 console.log('--------------');
 
                 axios.defaults.headers.common['Authorization'] = process.env.RESCUEGROUPS_API;
