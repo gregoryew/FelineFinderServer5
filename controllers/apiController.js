@@ -34,7 +34,7 @@ module.exports = function(app) {
                 
                 const headers = {
                     'Content-Type': 'application/vnd.api+json',
-                    'Authorization': process.ENV.RESCUEGROUPS_API
+                    'Authorization': process.env.RESCUEGROUPS_API
                 }
 
                 axios.post('https://api.rescuegroups.org/v5/public/animals/search/available?sort=animals.distance&fields[animals]=id,name,breedPrimary,ageGroup,sex,updatedDate,birthDate,availableDate,sizeGroup,descriptionHtml,descriptionText,status&limit=25', 
