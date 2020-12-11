@@ -31,7 +31,9 @@ module.exports = function(app) {
                 query = bufferToString.buffer2str(data.Body, true);
                 console.log('=================================');
                 console.log('Sending query to rescue groups');
+                console.log('--------------');
                 console.log('QUERY = ' & query);
+                console.log('--------------');
 
                 axios.defaults.headers.common['Authorization'] = process.env.RESCUEGROUPS_API;
                 axios.defaults.headers.post['Content-Type'] = 'application/vnd.api+json';
