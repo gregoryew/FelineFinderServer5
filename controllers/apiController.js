@@ -37,13 +37,15 @@ module.exports = function(app) {
                     'Authorization': process.env.RESCUEGROUPS_API
                 }
 
+                console.log("HEADER = " + headers);
+
                 axios.post('https://api.rescuegroups.org/v5/public/animals/search/available?sort=animals.distance&fields[animals]=id,name,breedPrimary,ageGroup,sex,updatedDate,birthDate,availableDate,sizeGroup,descriptionHtml,descriptionText,status&limit=25', 
                 query,
                 headers
                 )
                   .then(function (response) {
                     //console.log('SUCCESS RESPONSE = ' + response);
-                    if(response && response.data && response.data.foundRows) {res.send({foundRows: response.data.foundRows})};
+                    if(response && response.meta && response.meta.count) {res.send({foundRows: response.meta.count})};
                   })
                   .catch(function (error) {
                     console.log('ERROR = ' + error);
