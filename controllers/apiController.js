@@ -28,7 +28,7 @@ module.exports = function(app) {
                 console.log("file name = " + search.id + ".json")
                 if (err) {console.log('PROCESS SEARCH ERROR = ' + err);}
                 console.log("data = " + JSON.stringify(data));
-                query = bufferToString.buffer2str(data.Body, true);
+                query = bufferToString.buffer2str(data.Body, false);
                 console.log('=================================');
                 console.log('Sending query to rescue groups');
                 console.log('--------------');
