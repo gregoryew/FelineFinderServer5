@@ -46,7 +46,7 @@ module.exports = function(app) {
                 )
                   .then(function (response) {
                     //console.log('SUCCESS RESPONSE = ' + JSON.stringify(response));
-                    console.log("COUNT = " + simpleStringify(response))
+                    console.log("RESPONSE = " + cleanStringify(response.data))
                     if(response && response.meta && response.meta.count) {res.send({foundRows: response.meta.count})};
                   })
                   .catch(function (error) {
@@ -57,21 +57,30 @@ module.exports = function(app) {
        }); 
     });
     
-    function simpleStringify (object){
-        var simpleObject = {};
-        for (var prop in object ){
-            if (!object.hasOwnProperty(prop)){
-                continue;
-            }
-            if (typeof(object[prop]) == 'object'){
-                continue;
-            }
-            if (typeof(object[prop]) == 'function'){
-                continue;
-            }
-            simpleObject[prop] = object[prop];
+    function cleanStringify(object) {
+        if (object && typeof object === 'object') {
+            object = copyWithoutCircularReferences([object], object);
         }
-        return JSON.stringify(simpleObject); // returns cleaned up JSON
+        return JSON.stringify(object);
+    
+        function copyWithoutCircularReferences(references, object) {
+            var cleanObject = {};
+            Object.keys(object).forEach(function(key) {
+                var value = object[key];
+                if (value && typeof value === 'object') {
+                    if (references.indexOf(value) < 0) {
+                        references.push(value);
+                        cleanObject[key] = copyWithoutCircularReferences(references, value);
+                        references.pop();
+                    } else {
+                        cleanObject[key] = '###_Circular_###';
+                    }
+                } else if (typeof value !== 'function') {
+                    cleanObject[key] = value;
+                }
+            });
+            return cleanObject;
+        }
     };
 
     app.get('/test', function (req, res) {
