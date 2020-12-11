@@ -30,7 +30,7 @@ module.exports = function(app) {
                 console.log("data = " + JSON.stringify(data));
                 //query = bufferToString.buffer2str(data.Body.buffer, false);
                 //query = JSON.stringify(data.Body)
-                query = data.Body.buffer.fromCharCode.apply(null, asciiKeys);
+                query = String.fromCharCode.apply(null, data.Body.buffer);
                 console.log('=================================');
                 console.log('Sending query to rescue groups');
                 console.log('--------------');
