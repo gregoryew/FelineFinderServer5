@@ -25,28 +25,17 @@ module.exports = function(app) {
                 s3.downloadFile('ff-saved-queries', search.id + '.json', function(err, data) {
                 //fs.readFile('https://ff-saved-queries.s3.us-east-2.amazonaws.com/' + search.id + '.json', function (err, data) {
                 if (err) {console.log('PROCESS SEARCH ERROR = ' + err);}
-                //console.log("DATA = " + JSON.stringify(data));
                 query = data.Body.toString('utf-8');
                 console.log('=================================');
                 console.log('Sending query to rescue groups');
                 query = JSON.parse(query);
-                console.log('QUERY = ' & query);
-                
-                /*
-                const headers = {
-                    'Content-Type': 'application/vnd.api+json',
-                    'Authorization': process.env.RESCUEGROUPS_API
-                }
-                */
+                console.log('QUERY = ' & JSON.stringify(query));
 
-                //axios.defaults.baseURL = 'https://api.rescuegroups.org/v5/public/animals/search/available?sort=animals.distance&fields[animals]=id,name,breedPrimary,ageGroup,sex,updatedDate,birthDate,availableDate,sizeGroup,descriptionHtml,descriptionText,status&limit=25';
                 axios.defaults.headers.common['Authorization'] = process.env.RESCUEGROUPS_API;
                 axios.defaults.headers.post['Content-Type'] = 'application/vnd.api+json';
 
-                //console.log("HEADER = " + JSON.stringify(headers));
-
                 axios.post('https://api.rescuegroups.org/v5/public/animals/search/available?sort=animals.distance&fields[animals]=id,name,breedPrimary,ageGroup,sex,updatedDate,birthDate,availableDate,sizeGroup,descriptionHtml,descriptionText,status&limit=25', 
-                query
+                JSON.stringify(query)
                 )
                   .then(function (response) {
                     //console.log('SUCCESS RESPONSE = ' + response);
