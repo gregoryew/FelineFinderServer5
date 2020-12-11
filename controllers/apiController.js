@@ -46,7 +46,7 @@ module.exports = function(app) {
                 )
                   .then(function (response) {
                     //console.log('SUCCESS RESPONSE = ' + JSON.stringify(response));
-                    console.log("COUNT = " + JSON.stringify(response.meta))
+                    console.log("COUNT = " + simpleStringify(response))
                     if(response && response.meta && response.meta.count) {res.send({foundRows: response.meta.count})};
                   })
                   .catch(function (error) {
@@ -57,6 +57,23 @@ module.exports = function(app) {
        }); 
     });
     
+    function simpleStringify (object){
+        var simpleObject = {};
+        for (var prop in object ){
+            if (!object.hasOwnProperty(prop)){
+                continue;
+            }
+            if (typeof(object[prop]) == 'object'){
+                continue;
+            }
+            if (typeof(object[prop]) == 'function'){
+                continue;
+            }
+            simpleObject[prop] = object[prop];
+        }
+        return JSON.stringify(simpleObject); // returns cleaned up JSON
+    };
+
     app.get('/test', function (req, res) {
         res.send("Can access API");
     })
