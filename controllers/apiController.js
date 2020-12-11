@@ -42,7 +42,7 @@ module.exports = function(app) {
                 axios.defaults.headers.post['Content-Type'] = 'application/vnd.api+json';
 
                 axios.post('https://api.rescuegroups.org/v5/public/animals/search/available?sort=animals.distance&fields[animals]=id,name,breedPrimary,ageGroup,sex,updatedDate,birthDate,availableDate,sizeGroup,descriptionHtml,descriptionText,status&limit=25', 
-                JSON.stringify(query)
+                query
                 )
                   .then(function (response) {
                     //console.log('SUCCESS RESPONSE = ' + response);
