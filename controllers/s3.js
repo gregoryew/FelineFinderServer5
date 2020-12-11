@@ -1,8 +1,11 @@
 const AWS = require('aws-sdk');
+const fs = require('fs'); // Needed for example below
 
+const spacesEndpoint = new AWS.Endpoint('sfo2.digitaloceanspaces.com');
 const s3 = new AWS.S3({
-  accessKeyId: process.env.AWS_ACCESS_KEY,
-  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
+  endpoint: spacesEndpoint,
+  accessKeyId: process.env.DO_ACCESS_KEY,
+  secretAccessKey: process.env.DO_SECRET_ACCESS_KEY
 });
 
 const uploadFile = (bucketName, fileName, query) => {
@@ -14,9 +17,9 @@ const uploadFile = (bucketName, fileName, query) => {
     console.log('!!!!!! query = ' + JSON.stringify(query));
     console.log('********** Params = ' + JSON.stringify(params));
     console.log('********** S3 = ' + JSON.stringify(s3));
-    s3.upload(params, function(s3Err, data) {
-        if (s3Err) throw s3Err
-        return `File uploaded successfully at ${data.Location}`;
+    s3.putObject(params, function(err, data) {
+        if (err) throw err
+        return "File uploaded successfully at ${data.Location}";
     });
 };
 

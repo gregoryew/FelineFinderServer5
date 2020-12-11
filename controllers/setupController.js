@@ -7,7 +7,7 @@ module.exports = function(app) {
     
    app.get('/api/setupSearches', function(req, res) {
        
-        const apiKey = process.env.APIKEY
+       const apiKey = process.env.APIKEY
 
        // seed database
        var starterSearches = [
