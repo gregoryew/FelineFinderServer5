@@ -31,7 +31,16 @@ module.exports = function(app) {
                 console.log('Sending query to rescue groups');
                 console.log('QUERY = ' & query);
                 query = JSON.parse(query);
-                axios.post('https://api.rescuegroups.org/http/v2.json', query)
+                
+                const headers = {
+                    'Content-Type': 'application/vnd.api+json',
+                    'Authorization': process.ENV.RESCUEGROUPS_API
+                }
+
+                axios.post('https://api.rescuegroups.org/v5/public/animals/search/available?sort=animals.distance&fields[animals]=id,name,breedPrimary,ageGroup,sex,updatedDate,birthDate,availableDate,sizeGroup,descriptionHtml,descriptionText,status&limit=25', 
+                query,
+                headers
+                )
                   .then(function (response) {
                     //console.log('SUCCESS RESPONSE = ' + response);
                     if(response && response.data && response.data.foundRows) {res.send({foundRows: response.data.foundRows})};

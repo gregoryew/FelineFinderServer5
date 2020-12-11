@@ -55,7 +55,7 @@ module.exports = function(app) {
                 for(var i = 0; i < results.length; i++) {
                     s3.uploadFile('ff-saved-queries', `${results[i].id}.json`, JSON.stringify(results[i].query));
                     //fs.writeFileSync(appRoot + '/queries/' + results[i].id + '.json', JSON.stringify(results[i].query));
-                }
+                }    
 
                 res.send(results);
 
