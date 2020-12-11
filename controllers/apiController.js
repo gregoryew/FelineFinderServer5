@@ -6,7 +6,7 @@ const appRoot = require('app-root-path');
 const axios = require('axios');
 const s3 = require('./s3.js');
 const sendPush = require('./sendPush.js');
-const bufferToString = require('string-encode');
+//const bufferToString = require('string-encode');
 
 module.exports = function(app) {
     
@@ -28,7 +28,8 @@ module.exports = function(app) {
                 console.log("file name = " + search.id + ".json")
                 if (err) {console.log('PROCESS SEARCH ERROR = ' + err);}
                 console.log("data = " + JSON.stringify(data));
-                query = bufferToString.buffer2str(data.Body, false);
+                //query = bufferToString.buffer2str(data.Body, false);
+                query = JSON.stringify(data.Body)
                 console.log('=================================');
                 console.log('Sending query to rescue groups');
                 console.log('--------------');
