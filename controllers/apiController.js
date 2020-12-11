@@ -46,7 +46,7 @@ module.exports = function(app) {
                 )
                   .then(function (response) {
                     //console.log('SUCCESS RESPONSE = ' + JSON.stringify(response));
-                    console.log("COUNT = " + response.meta.count)
+                    console.log("COUNT = " + JSON.stringify(response.meta))
                     if(response && response.meta && response.meta.count) {res.send({foundRows: response.meta.count})};
                   })
                   .catch(function (error) {
