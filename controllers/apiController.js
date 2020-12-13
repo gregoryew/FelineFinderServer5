@@ -12,13 +12,27 @@ module.exports = function(app) {
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: true }));
     
-    app.get('/api/pushTest/:token', function(req, res) {
-        sendPush.sendPushTest(req.params.token)
+    app.get('/api/pushTest', function(req, res) {
+        sendPush.sendPushTest()
         res.send('Push Sent');
     })
 
     app.get('/api/search/process', function(req, res) {
-        Searches.find({ $or : [  {  sentPush : null }, {sentPush: {$gt:new Date(Date.now() - 24*60*60 * 1000)}} ] }, function(err, searches) {
+        Searches.aggregate([{
+            $lookup: {
+                from: "userIdTokenMappings", // collection name in db
+                localField: "userId",
+                foreignField: "userId",
+                as: "searchesWithIDs"
+            }
+        }]).exec(function(err, searches) {
+            if (err) {console.log("JOIN ERROR = " + err)}
+            else {processSearches(searches)}
+        });
+    });
+
+    function processSearches(searches) {
+        searches.find({ $or : [  {  sentPush : null }, {sentPush: {$gt:new Date(Date.now() - 24*60*60 * 1000)}} ] }, function(err, searches) {
             if (err) throw err;
             
             for (search of searches) {
@@ -65,7 +79,7 @@ module.exports = function(app) {
             });
         }
        }); 
-    });
+    }
     
     function cleanStringify(object) {
         if (object && typeof object === 'object') {
@@ -115,6 +129,24 @@ module.exports = function(app) {
         
     });
     
+    app.post('/api/user', function(req, res) {
+        if (req.body.userId) {
+            userTokenMapping.findOneAndUpdate(
+                { userId: eq.body.userId },
+                { token: req.body.token }
+            )
+        } else {
+            var newUserTokenMapping = userTokenMapping({
+                userId: req.body.userId,
+                token: req.body.token
+            });
+            newUserTokenMapping.save(function(err, userToken) {
+                if (err) throw err;
+                res.send('Success');
+            });    
+        }
+    })
+
     app.post('/api/search', function(req, res) {
         const query2 = req.body.query;
         console.log('REQ = ' + JSON.stringify(req.body));
@@ -137,15 +169,16 @@ module.exports = function(app) {
         }
         
         else {
-           
+
            var newSearch = Searches({
+            userId: req.body.userId,
             name: req.body.name,
             created: new Date(),
             lastRun: null,
             times: 0,
             success: null,
             sentPush: null,
-            query: null             
+            query: null
            });
            newSearch.save(function(err, search) {
                if (err) throw err;

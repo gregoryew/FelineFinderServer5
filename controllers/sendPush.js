@@ -4,7 +4,7 @@ let appRoot = require('app-root-path');
 const s3 = require('./s3');
 const fs = require('fs');
 
-sendPushTest = function(deviceToken, badge, sound, alert, payload, topic) {
+sendPushTest = function(badge, sound, alert, payload, topic) {
   fs.exists(appRoot + '/config/AuthKey_6P7YN9TBQF.p8', (exists) => {
     if (!exists) {s3.downloadFile('ff-saved-queries', 'AuthKey_6P7YN9TBQF.p8', function(error, data) {
       console.log("ERROR BEGIN")
@@ -23,7 +23,7 @@ sendPushTest = function(deviceToken, badge, sound, alert, payload, topic) {
     }})
 }
 
-sendPush = function(deviceToken, badge, sound, alert, payload, topic) {
+sendPush = function(badge, sound, alert, payload, topic) {
 var options = {
   token: {
   key: appRoot + '/config/AuthKey_6P7YN9TBQF.p8',
