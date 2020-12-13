@@ -6,7 +6,7 @@ const fs = require('fs');
 
 sendPushTest = function(deviceToken) {
   if (!fs.exists(appRoot + '/controllers' + process.env.apnKey)) {
-    s3.downloadFile('ff-saved-queries', process.env.apnKey, function(data, error) {
+    s3.downloadFile('ff-saved-queries', process.env.apnKey, function(error, data) {
       fs.writeFileSync(appRoot + '/controllers' + process.env.apnKey, data)
       sendPush(deviceToken)
     })
