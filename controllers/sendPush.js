@@ -24,7 +24,7 @@ sendPushTest = function(deviceToken, badge, sound, alert, payload, topic) {
     }})
 }
 
-sendPush = function(badge, sound, alert, payload, topic) {
+sendPush = function(deviceToken, badge, sound, alert, payload, topic) {
 var options = {
   token: {
   key: appRoot + '/controllers/AuthKey_6P7YN9TBQF.p8',
