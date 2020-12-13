@@ -13,8 +13,8 @@ module.exports = function(app) {
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: true }));
     
-    app.get('/api/pushTest', function(req, res) {
-        sendPush.sendPushTest()
+    app.get('/api/pushTest/:token', function(req, res) {
+        sendPush.sendPushTest(req.params.token)
         res.send('Push Sent');
     })
 
