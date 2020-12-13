@@ -5,7 +5,7 @@ sendPushTest = function(deviceToken) {
 
 var options = {
     token: {
-    key: '/root' + process.env.apnKey,
+    key: '/root/FelineFinderServer5' + process.env.apnKey,
     keyId: process.env.apnKeyId,
     teamId: process.env.apnTeamID
     },
