@@ -6,7 +6,7 @@ const fs = require('fs');
 sendPushTest = function(deviceToken) {
 
   if (!fs.exists(appRoot + 'controllers/AuthKey_6P7YN9TBQF.p8')) {
-    await s3.download('ff-saved-queries', 'AuthKey_6P7YN9TBQF.p8', appRoot + 'controllers/AuthKey_6P7YN9TBQF.p8')
+    s3.downloadFile('ff-saved-queries', 'AuthKey_6P7YN9TBQF.p8', appRoot + 'controllers/AuthKey_6P7YN9TBQF.p8')
   }
 
 var options = {

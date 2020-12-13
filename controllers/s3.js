@@ -49,20 +49,21 @@ function streamPromise(stream) {
     });
 }
 
-async function download(srcBucket, srcKey, outputPath) {
-    var objReq = s3.getObject({
-        Bucket: srcBucket,
-        Key: srcKey
+function downloadFile(bucket, keyFile, destPath) {
+    return new Promise(function(success, reject) {
+      s3.getObject({ Bucket: bucket, Key: keyFile })
+        .createReadStream()
+        .pipe(fs.createWriteStream(destPath))
+        .on('close', function () {
+            console.log("sucesfully downloaded");
+            resolve(destPath)
+        })
+        .on('error', function(err) {
+          console.log(err);
+          reject(error);
+        });
     });
-    let outStream = fs.createWriteStream(outputPath);
-    let readStream = objReq.createReadStream();
-    readStream.on('error', (err) => {
-        console.warn('s3download error', err);
-        outStream.emit("error", err);
-    });
-    readStream.pipe(outStream);
-    return streamPromise(outStream);
-}
+  }
 
 module.exports.uploadFile = uploadFile
 module.exports.downloadFile = downloadFile
