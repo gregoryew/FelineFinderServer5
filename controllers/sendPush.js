@@ -6,15 +6,8 @@ const fs = require('fs');
 sendPushTest = function(deviceToken) {
 
   if (!fs.exists(appRoot + 'controllers/AuthKey_6P7YN9TBQF.p8')) {
-    s3.downloadFile('ff-saved-queries', 'AuthKey_6P7YN9TBQF.p8')
-    .then(function(data) {
-      console.log('Writting cert to ' + appRoot + 'controllers/AuthKey_6P7YN9TBQF.p8');
-      fs.writeFileSync(appRoot() + 'controllers/AuthKey_6P7YN9TBQF.p8')
-    })
-    .catch (function (error) {
-      console.log("ERROR = " + error)
-    })
-  }    
+    await s3.s3Download('ff-saved-queries', process.env.apnKey, appRoot + 'controllers/' + process.env.apnKey)
+  }
 
 var options = {
     token: {

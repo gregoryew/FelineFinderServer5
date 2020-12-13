@@ -35,28 +35,33 @@ const downloadFile = (bucketName, fileName, callback) => {
 };
 */
 
-const downloadFile = (bucketName, fileName) => {
+function streamPromise(stream) {
+    return new Promise((resolve, reject) => {
+        stream.on('end', () => {
+            resolve('end');
+        });
+        stream.on('finish', () => {
+            resolve('finish');
+        });
+        stream.on('error', (error) => {
+            reject(error);
+        });
+    });
+}
 
-const params = {
-    Bucket: bucketName,
-    Key: keyName
-};
-
-const readStream = s3.getObject(params).createReadStream();
-
-// Error handling in read stream
-readStream.on("error", (e) => {
-    console.error(e);
-    reject(e);
-});
-
-// Resolve only if we are done writing
-writeStream.once('finish', () => {
-    resolve(filename);
-});
-
-// pipe will automatically finish the write stream once done
-readStream.pipe(writeStream);
+async function s3Download(srcBucket, srcKey, outputPath) {
+    var objReq = s3.getObject({
+        Bucket: srcBucket,
+        Key: srcKey
+    });
+    let outStream = fs.createWriteStream(outputPath);
+    let readStream = objReq.createReadStream();
+    readStream.on('error', (err) => {
+        console.warn('s3download error', err);
+        outStream.emit("error", err);
+    });
+    readStream.pipe(outStream);
+    return streamPromise(outStream);
 }
 
 module.exports.uploadFile = uploadFile
