@@ -5,7 +5,7 @@ sendPushTest = function(deviceToken) {
 
 var options = {
     token: {
-    key: appRoot + process.env.apnKey,
+    key: '/root/controllers/' + process.env.apnKey,
     keyId: process.env.apnKeyId,
     teamId: process.env.apnTeamID
     },
