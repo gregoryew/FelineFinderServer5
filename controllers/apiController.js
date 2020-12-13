@@ -147,17 +147,6 @@ module.exports = function(app) {
                 res.send('Success');
             }
         });
- /*
-        if (userIdTokenMappings.find({ userId: req.body.userId }, function(err, search) {
-            userIdTokenMappings.findOneAndUpdate(
-                { userId: req.body.userId },
-                { token: req.body.token }
-            )
-            res.send('Success');
-            }
-        } else {
-        }
-*/
     })
 
     app.post('/api/search', function(req, res) {
@@ -166,6 +155,7 @@ module.exports = function(app) {
         console.log('QUERY2 = ' + JSON.stringify(query2));
         if (req.body.id) {
             Search.findByIdAndUpdate(req.body.id, {
+                userId: req.body.userId,
                 name: req.body.name,
                 created: req.body.created,
                 lastRun: null,
