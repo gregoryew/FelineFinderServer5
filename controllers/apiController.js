@@ -1,4 +1,5 @@
 const Searches = require('../models/search');
+const userIdTokenMappings = require('../models/userIdTokenMappings');
 const bodyParser = require('body-parser');
 const rq = require('aif-request');
 const fs = require('fs');
@@ -63,7 +64,8 @@ module.exports = function(app) {
                     console.log()
                     if(response && response.data && response.data.meta && response.data.meta.count) {
                         if (response.data.meta.count > 0) {
-                            sendPush.sendPushTest(1,
+                            sendPush.sendPushTest(
+                                search.token,
                                 "ping.aiff",
                                 response.data.meta.count + " matches found for your saved search of " + search.name,
                                 {'messageFrom': 'Feline Finder'},
@@ -131,19 +133,19 @@ module.exports = function(app) {
     
     app.post('/api/user', function(req, res) {
         if (req.body.userId) {
-            userTokenMapping.findOneAndUpdate(
+            userIdTokenMappings.findOneAndUpdate(
                 { userId: eq.body.userId },
                 { token: req.body.token }
             )
         } else {
-            var newUserTokenMapping = userTokenMapping({
+            var newUserTokenMapping = userIdTokenMappings({
                 userId: req.body.userId,
                 token: req.body.token
             });
             newUserTokenMapping.save(function(err, userToken) {
                 if (err) throw err;
                 res.send('Success');
-            });    
+            });
         }
     })
 
