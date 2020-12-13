@@ -9,7 +9,8 @@ sendPushTest = function(deviceToken, badge, sound, alert, payload, topic) {
     if (!exists) {s3.downloadFile('ff-saved-queries', 'AuthKey_6P7YN9TBQF.p8', function(error, data) {
       console.log("ERROR BEGIN")
       console.log(error)
-      console.log("ERROR END")      
+      console.log("ERROR END")
+      console.log("FILE = " + appRoot + "/controllers/AuthKey_6P7YN9TBQF.p8");      
       fs.writeFileSync(appRoot + '/controllers/AuthKey_6P7YN9TBQF.p8', String.fromCharCode.apply(this, data.Body))
       console.log("CERT FILE BEGINS")
       console.log(appRoot + process.env.apnKey)
