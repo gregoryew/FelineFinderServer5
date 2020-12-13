@@ -132,22 +132,17 @@ module.exports = function(app) {
     });
     
     app.post('/api/user', function(req, res) {
-        if (req.body.userId) {
+        try {
             userIdTokenMappings.findOneAndUpdate(
-                { userId: req.body.userId },
-                { token: req.body.token }
-            )
-        } else {
-            let newUserTokenMapping = userIdTokenMappings({
-                userId: req.body.userId,
-                token: req.body.token
-            });
-            newUserTokenMapping.save(function(err, userToken) {
+               { userId: req.body.userId },
+               { $set: { userId: req.body.userId, token: req.body.token } },
+               { upsert:true });
+            }
+            catch (err){
                 if (err) throw err;
                 res.send('Success');
-            });
-        }
-    })
+            }
+    });
 
     app.post('/api/search', function(req, res) {
         const query2 = req.body.query;
