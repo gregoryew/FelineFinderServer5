@@ -138,7 +138,7 @@ module.exports = function(app) {
                 { token: req.body.token }
             )
         } else {
-            var newUserTokenMapping = userIdTokenMappings({
+            let newUserTokenMapping = userIdTokenMappings({
                 userId: req.body.userId,
                 token: req.body.token
             });
