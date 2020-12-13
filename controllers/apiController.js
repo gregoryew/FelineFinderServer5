@@ -132,22 +132,37 @@ module.exports = function(app) {
     });
     
     app.post('/api/user', function(req, res) {
-        if (req.body.id) {
+ 
+        userIdTokenMappings.findOneAndUpdate({ userId: req.body.userId }, { token: req.body.token }, options = { upsert: true }, function(error, result) {
+            if (!error) {
+                // If the document doesn't exist
+                if (!result) {
+                    // Create it
+                    result = new userIdTokenMappings();
+                }
+                // Save the document
+                result.save(function(error) {
+                    if (!error) {
+                        res.send('Success');
+                    } else {
+                        throw error;
+                    }
+                });
+            } else {
+                res.send('Success');
+            }
+        });
+ /*
+        if (userIdTokenMappings.find({ userId: req.body.userId }, function(err, search) {
             userIdTokenMappings.findOneAndUpdate(
                 { userId: req.body.userId },
                 { token: req.body.token }
             )
             res.send('Success');
+            }
         } else {
-            let newUserTokenMapping = userIdTokenMappings({
-                userId: req.body.userId,
-                token: req.body.token
-            });
-            newUserTokenMapping.save(function(err, userToken) {
-                if (err) throw err;
-                res.send('Success');
-            });
         }
+*/
     })
 
     app.post('/api/search', function(req, res) {
