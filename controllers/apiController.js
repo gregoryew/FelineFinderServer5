@@ -137,10 +137,10 @@ module.exports = function(app) {
                { userId: req.body.userId },
                { $set: { userId: req.body.userId, token: req.body.token } },
                { upsert:true });
+               res.send('Success');
             }
             catch (err){
                 if (err) throw err;
-                res.send('Success');
             }
     });
 
