@@ -74,7 +74,7 @@ module.exports = function(app) {
                             {'messageFrom': 'Feline Finder'},
                             "com.gregsiosapps.TestAPN")
                         }
-                        res.send("Sending Message")
+                        console.log("Sending Message")
                     }
                 })
                 .catch(function (error) {
