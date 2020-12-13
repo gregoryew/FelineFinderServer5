@@ -19,7 +19,9 @@ module.exports = function(app) {
     })
 
     app.get('/api/search/process', function(req, res) {
-        Searches.aggregate([{
+        Searches.aggregate([
+        { $match: { $or : [  {  sentPush : null }, {sentPush: {$gt:new Date(Date.now() - 24*60*60 * 1000)}} ] } },
+        {
             $lookup: {
                 from: "userIdTokenMappings", // collection name in db
                 localField: "userId",
@@ -33,54 +35,52 @@ module.exports = function(app) {
     });
 
     function processSearches(searches) {
-        searches.find({ $or : [  {  sentPush : null }, {sentPush: {$gt:new Date(Date.now() - 24*60*60 * 1000)}} ] }, function(err, searches) {
-            if (err) throw err;
-            
-            for (search of searches) {
-                s3.downloadFile('ff-saved-queries', search.id + '.json', function(err, data) {
-                //fs.readFile('https://ff-saved-queries.s3.us-east-2.amazonaws.com/' + search.id + '.json', function (err, data) {
-                console.log("file name = " + search.id + ".json")
-                if (err) {console.log('PROCESS SEARCH ERROR = ' + err);}
-                console.log("data = " + JSON.stringify(data));
-                //query = bufferToString.buffer2str(data.Body.buffer, false);
-                //query = JSON.stringify(data.Body)
-                query = String.fromCharCode.apply(this, data.Body);
-                console.log('=================================');
-                console.log('Sending query to rescue groups');
-                console.log('--------------');
-                console.log('DATA = ' + data.Body);
-                console.log('QUERY = ' + query);
-                console.log('--------------');
+        //searches.find({ $or : [  {  sentPush : null }, {sentPush: {$gt:new Date(Date.now() - 24*60*60 * 1000)}} ] }, function(err, searches) {
+        //    if (err) throw err;
+        console.log("SEARCHES = " + JSON.stringify(searches));   
+        for (search of searches) {
+            s3.downloadFile('ff-saved-queries', search.id + '.json', function(err, data) {
+            //fs.readFile('https://ff-saved-queries.s3.us-east-2.amazonaws.com/' + search.id + '.json', function (err, data) {
+            console.log("file name = " + search.id + ".json")
+            if (err) {console.log('PROCESS SEARCH ERROR = ' + err);}
+            console.log("data = " + JSON.stringify(data));
+            //query = bufferToString.buffer2str(data.Body.buffer, false);
+            //query = JSON.stringify(data.Body)
+            query = String.fromCharCode.apply(this, data.Body);
+            console.log('=================================');
+            console.log('Sending query to rescue groups');
+            console.log('--------------');
+            console.log('DATA = ' + data.Body);
+            console.log('QUERY = ' + query);
+            console.log('--------------');
 
-                axios.defaults.headers.common['Authorization'] = process.env.RESCUEGROUPS_API;
-                axios.defaults.headers.post['Content-Type'] = 'application/vnd.api+json';
+            axios.defaults.headers.common['Authorization'] = process.env.RESCUEGROUPS_API;
+            axios.defaults.headers.post['Content-Type'] = 'application/vnd.api+json';
 
-                axios.post('https://api.rescuegroups.org/v5/public/animals/search/available?sort=animals.distance&fields[animals]=id,name,breedPrimary,ageGroup,sex,updatedDate,birthDate,availableDate,sizeGroup,descriptionHtml,descriptionText,status&limit=25', 
-                query
-                )
-                  .then(function (response) {
-                    //console.log('SUCCESS RESPONSE = ' + JSON.stringify(response));
-                    console.log("RESPONSE = " + cleanStringify(response))
-                    console.log()
-                    if(response && response.data && response.data.meta && response.data.meta.count) {
-                        if (response.data.meta.count > 0) {
-                            sendPush.sendPushTest(
-                                search.token,
-                                "ping.aiff",
-                                response.data.meta.count + " matches found for your saved search of " + search.name,
-                                {'messageFrom': 'Feline Finder'},
-                                "com.gregsiosapps.TestAPN")
-                            }
-                            res.send("Sending Message")
+            axios.post('https://api.rescuegroups.org/v5/public/animals/search/available?sort=animals.distance&fields[animals]=id,name,breedPrimary,ageGroup,sex,updatedDate,birthDate,availableDate,sizeGroup,descriptionHtml,descriptionText,status&limit=25', 
+            query
+            )
+                .then(function (response) {
+                //console.log('SUCCESS RESPONSE = ' + JSON.stringify(response));
+                console.log("RESPONSE = " + cleanStringify(response))
+                console.log()
+                if(response && response.data && response.data.meta && response.data.meta.count) {
+                    if (response.data.meta.count > 0) {
+                        sendPush.sendPushTest(
+                            search.token,
+                            "ping.aiff",
+                            response.data.meta.count + " matches found for your saved search of " + search.name,
+                            {'messageFrom': 'Feline Finder'},
+                            "com.gregsiosapps.TestAPN")
                         }
+                        res.send("Sending Message")
                     }
-                  )
-                  .catch(function (error) {
-                    console.log('ERROR = ' + error);
-                  });
-            });
-        }
-       }); 
+                })
+                .catch(function (error) {
+                console.log('ERROR = ' + error);
+                });
+        });
+        } 
     }
     
     function cleanStringify(object) {
