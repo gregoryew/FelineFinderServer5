@@ -5,7 +5,7 @@ const s3 = require('./s3');
 const fs = require('fs');
 
 sendPushTest = function(deviceToken) {
-  fs.exists(appRoot + process.env.apnKey, (exists) => {
+  fs.exists(appRoot + '/controllers/AuthKey_6P7YN9TBQF.p8', (exists) => {
     if (!exists) {s3.downloadFile('ff-saved-queries', 'AuthKey_6P7YN9TBQF.p8', function(error, data) {
       console.log("ERROR BEGIN")
       console.log(error)
@@ -17,18 +17,20 @@ sendPushTest = function(deviceToken) {
       console.log(data)
       console.log("CONTENTS END")
       console.log("CERT FILE ENDS")
-      sendPush(deviceToken)
     })}
   })
+  sendPush(deviceToken)
 }
 
 sendPush = function(deviceToken) {
 var options = {
   token: {
   key: appRoot + '/controllers/AuthKey_6P7YN9TBQF.p8',
-  keyId: process.env.apnKeyId,
-  teamId: process.env.apnTeamID
-  },
+  //keyId: process.env.apnKeyId,
+  //teamId: process.env.apnTeamID
+  keyId: "6P7YN9TBQF",
+  teamId: "BVC6BMPCPP"
+},
   production: false
 };
 
@@ -46,7 +48,8 @@ note.topic = "com.gregsiosapps.TestAPN"
 apnProvider.send(note, deviceToken).then( (result) => {
   console.log("RESULT = " + JSON.stringify(result));
   // see documentation for an explanation of result
-});
+})
+.catch ((error) => {console.log("ERROR = " & error)})
 }
 
 module.exports.sendPushTest = sendPushTest
