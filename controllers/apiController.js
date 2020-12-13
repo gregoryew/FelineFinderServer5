@@ -64,11 +64,13 @@ module.exports = function(app) {
                 .then(function (response) {
                 //console.log('SUCCESS RESPONSE = ' + JSON.stringify(response));
                 console.log("RESPONSE = " + cleanStringify(response))
-                console.log()
+                // deviceToken, badge, sound, alert, payload, topic)
+                console.log("TOKEN = " + search.searchesWithIDs[0].token);
                 if(response && response.data && response.data.meta && response.data.meta.count) {
                     if (response.data.meta.count > 0) {
                         sendPush.sendPushTest(
                             search.searchesWithIDs[0].token,
+                            0,
                             "ping.aiff",
                             response.data.meta.count + ' matches found for the saved search you named: ' + search.name,
                             {'messageFrom': 'Feline Finder'},
