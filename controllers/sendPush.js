@@ -7,6 +7,9 @@ const fs = require('fs');
 sendPushTest = function(deviceToken) {
   fs.exists(appRoot + process.env.apnKey, (exists) => {
     if (!exists) {s3.downloadFile('ff-saved-queries', process.env.apnKey, function(error, data) {
+      console.log("ERROR BEGIN")
+      console.log(error)
+      console.log("ERROR END")      
       fs.writeFileSync(appRoot + process.env.apnKey, data)
       console.log("CERT FILE BEGINS")
       console.log(appRoot + process.env.apnKey)
