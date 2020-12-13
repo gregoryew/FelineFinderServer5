@@ -135,11 +135,6 @@ module.exports = function(app) {
  
         userIdTokenMappings.findOneAndUpdate({ userId: req.body.userId }, { token: req.body.token }, options = { upsert: true }, function(error, result) {
             if (!error) {
-                // If the document doesn't exist
-                if (!result) {
-                    // Create it
-                    result = new userIdTokenMappings();
-                }
                 // Save the document
                 result.save(function(error) {
                     if (!error) {
