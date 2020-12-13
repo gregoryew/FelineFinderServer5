@@ -57,8 +57,8 @@ module.exports = function(app) {
                             }
                             res.send("Sending Message")
                         }
-                    };
-                  })
+                    }
+                  )
                   .catch(function (error) {
                     console.log('ERROR = ' + error);
                   });

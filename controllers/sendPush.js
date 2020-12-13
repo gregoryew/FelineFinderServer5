@@ -4,7 +4,7 @@ let appRoot = require('app-root-path');
 const s3 = require('./s3');
 const fs = require('fs');
 
-sendPushTest = function(deviceToken) {
+sendPushTest = function(deviceToken, badge, sound, alert, payload, topic) {
   fs.exists(appRoot + '/config/AuthKey_6P7YN9TBQF.p8', (exists) => {
     if (!exists) {s3.downloadFile('ff-saved-queries', 'AuthKey_6P7YN9TBQF.p8', function(error, data) {
       console.log("ERROR BEGIN")
@@ -17,13 +17,13 @@ sendPushTest = function(deviceToken) {
       console.log(data)
       console.log("CONTENTS END")
       console.log("CERT FILE ENDS")
-      sendPush(deviceToken)
+      sendPush(deviceToken, badge, sound, alert, payload, topic)
     })} else {
-      sendPush(deviceToken)
+      sendPush(deviceToken, badge, sound, alert, payload, topic)
     }})
 }
 
-sendPush = function(deviceToken) {
+sendPush = function(deviceToken, badge, sound, alert, payload, topic) {
 var options = {
   token: {
   key: appRoot + '/config/AuthKey_6P7YN9TBQF.p8',
@@ -38,11 +38,20 @@ var apnProvider = new apn.Provider(options);
 var note = new apn.Notification();
 
 note.expiry = Math.floor(Date.now() / 1000) + 3600; // Expires 1 hour from now.
+note.badge = badge;
+note.sound = sound;
+note.alert = alert;
+note.payload = payload;
+note.topic = topic
+
+/*
+note.expiry = Math.floor(Date.now() / 1000) + 3600; // Expires 1 hour from now.
 note.badge = 3;
 note.sound = "ping.aiff";
 note.alert = "\uD83D\uDCE7 \u2709 You have a new message";
 note.payload = {'messageFrom': 'John Appleseed'};
 note.topic = "com.gregsiosapps.TestAPN"
+*/
 
 apnProvider.send(note, deviceToken).then( (result) => {
   console.log("RESULT = " + JSON.stringify(result));
