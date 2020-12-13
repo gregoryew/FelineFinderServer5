@@ -6,7 +6,6 @@ const appRoot = require('app-root-path');
 const axios = require('axios');
 const s3 = require('./s3.js');
 const sendPush = require('./sendPush.js');
-const bufferToString = require('string-encode');
 
 module.exports = function(app) {
     
@@ -48,7 +47,17 @@ module.exports = function(app) {
                     //console.log('SUCCESS RESPONSE = ' + JSON.stringify(response));
                     console.log("RESPONSE = " + cleanStringify(response))
                     console.log()
-                    if(response && response.data && response.data.meta && response.data.meta.count) {res.send({foundRows: response.data.meta.count})};
+                    if(response && response.data && response.data.meta && response.data.meta.count) {
+                        if (response.data.meta.count > 0) {
+                            sendPush.sendPushTest(1,
+                                "ping.aiff",
+                                response.data.meta.count + " matches found for your saved search of " + search.name,
+                                {'messageFrom': 'Feline Finder'},
+                                "com.gregsiosapps.TestAPN")
+                            }
+                            res.send("Sending Message")
+                        }
+                    };
                   })
                   .catch(function (error) {
                     console.log('ERROR = ' + error);
