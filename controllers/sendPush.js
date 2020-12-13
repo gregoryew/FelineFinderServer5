@@ -1,18 +1,12 @@
+const AWS = require('aws-sdk');
 let apn = require('@parse/node-apn');
 let appRoot = require('app-root-path');
-const s3 = require('./s3.js');
-const fs = require('fs');
 
 sendPushTest = function(deviceToken) {
-
-  if (!fs.exists(appRoot + 'controllers/AuthKey_6P7YN9TBQF.p8')) {
-    s3.downloadFile('ff-saved-queries', 'AuthKey_6P7YN9TBQF.p8')
-    .then(function (data) { fs.writeFileSync(appRoot + 'controllers/AuthKey_6P7YN9TBQF.p8', data)})
-  }
-
+  
 var options = {
     token: {
-    key: appRoot + 'controllers/' + process.env.apnKey,
+    key: '/root/controllers/' + process.env.apnKey,
     keyId: process.env.apnKeyId,
     teamId: process.env.apnTeamID
     },

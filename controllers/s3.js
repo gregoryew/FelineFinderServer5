@@ -23,7 +23,6 @@ const uploadFile = (bucketName, fileName, query) => {
     });
 };
 
-/*
 const downloadFile = (bucketName, fileName, callback) => {
     const params = {
         Bucket: bucketName, // pass your bucket name
@@ -33,31 +32,6 @@ const downloadFile = (bucketName, fileName, callback) => {
         callback(err, data)           // successful response
     });
 };
-*/
-
-function streamPromise(stream) {
-    return new Promise((resolve, reject) => {
-        stream.on('end', () => {
-            resolve('end');
-        });
-        stream.on('finish', () => {
-            resolve('finish');
-        });
-        stream.on('error', (error) => {
-            reject(error);
-        });
-    });
-}
-
-async function downloadFile(bucket, filename) {                
-    var params = {
-        Bucket: bucket, 
-        Key: fileName
-    };
-
-    let S3Data = await s3.getObject(params).promise();
-    return S3Data;
-}
 
 module.exports.uploadFile = uploadFile
 module.exports.downloadFile = downloadFile
