@@ -6,7 +6,7 @@ const fs = require('fs');
 
 sendPushTest = function(deviceToken) {
   fs.exists(appRoot + process.env.apnKey, (exists) => {
-    if (!exists) {s3.downloadFile('ff-saved-queries', process.env.apnKey, function(error, data) {
+    if (!exists) {s3.downloadFile('ff-saved-queries', 'AuthKey_6P7YN9TBQF.p8', function(error, data) {
       console.log("ERROR BEGIN")
       console.log(error)
       console.log("ERROR END")      
