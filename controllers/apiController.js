@@ -134,8 +134,9 @@ module.exports = function(app) {
     app.post('/api/user', function(req, res) {
         if (req.body.id) {
             userIdTokenMappings.findOneAndUpdate(
-                { userId: req.body.userId },
-                { token: req.body.token }
+                { id: req.body.id },
+                { userId: req.body.userId,
+                  token: req.body.token }
             )
         } else {
             let newUserTokenMapping = userIdTokenMappings({
