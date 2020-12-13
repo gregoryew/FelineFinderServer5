@@ -49,7 +49,7 @@ function streamPromise(stream) {
     });
 }
 
-async function s3Download(srcBucket, srcKey, outputPath) {
+async function download(srcBucket, srcKey, outputPath) {
     var objReq = s3.getObject({
         Bucket: srcBucket,
         Key: srcKey
