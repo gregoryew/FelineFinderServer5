@@ -23,6 +23,7 @@ const uploadFile = (bucketName, fileName, query) => {
     });
 };
 
+/*
 const downloadFile = (bucketName, fileName, callback) => {
     const params = {
         Bucket: bucketName, // pass your bucket name
@@ -32,6 +33,31 @@ const downloadFile = (bucketName, fileName, callback) => {
         callback(err, data)           // successful response
     });
 };
+*/
+
+const downloadFile = (bucketName, fileName) => {
+
+const params = {
+    Bucket: bucketName,
+    Key: keyName
+};
+
+const readStream = s3.getObject(params).createReadStream();
+
+// Error handling in read stream
+readStream.on("error", (e) => {
+    console.error(e);
+    reject(e);
+});
+
+// Resolve only if we are done writing
+writeStream.once('finish', () => {
+    resolve(filename);
+});
+
+// pipe will automatically finish the write stream once done
+readStream.pipe(writeStream);
+}
 
 module.exports.uploadFile = uploadFile
 module.exports.downloadFile = downloadFile
