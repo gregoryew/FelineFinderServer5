@@ -23,7 +23,7 @@ module.exports = function(app) {
         { $match: { $or : [  {  sentPush : null }, {sentPush: {$gt:new Date(Date.now() - 24*60*60 * 1000)}} ] } },
         {
             $lookup: {
-                from: "userIdTokenMappings", // collection name in db
+                from: "useridtokenmappings", // collection name in db
                 localField: "userId",
                 foreignField: "userId",
                 as: "searchesWithIDs"
@@ -39,9 +39,10 @@ module.exports = function(app) {
         //    if (err) throw err;
         console.log("SEARCHES = " + JSON.stringify(searches));   
         for (search of searches) {
-            s3.downloadFile('ff-saved-queries', search.id + '.json', function(err, data) {
+            console.log("SEARCH = " + search);
+            s3.downloadFile('ff-saved-queries', search._id + '.json', function(err, data) {
             //fs.readFile('https://ff-saved-queries.s3.us-east-2.amazonaws.com/' + search.id + '.json', function (err, data) {
-            console.log("file name = " + search.id + ".json")
+            console.log("file name = " + search._id + ".json")
             if (err) {console.log('PROCESS SEARCH ERROR = ' + err);}
             console.log("data = " + JSON.stringify(data));
             //query = bufferToString.buffer2str(data.Body.buffer, false);
