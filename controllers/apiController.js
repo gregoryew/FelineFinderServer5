@@ -68,9 +68,9 @@ module.exports = function(app) {
                 if(response && response.data && response.data.meta && response.data.meta.count) {
                     if (response.data.meta.count > 0) {
                         sendPush.sendPushTest(
-                            search.token,
+                            search.searchesWithIDs[0].token,
                             "ping.aiff",
-                            response.data.meta.count + " matches found for your saved search of " + search.name,
+                            response.data.meta.count + ' matches found for the saved search you named: ' + search.name,
                             {'messageFrom': 'Feline Finder'},
                             "com.gregsiosapps.TestAPN")
                         }
