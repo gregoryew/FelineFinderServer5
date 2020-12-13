@@ -8,6 +8,12 @@ sendPushTest = function(deviceToken) {
   fs.exists(appRoot + process.env.apnKey, (exists) => {
     if (!exists) {s3.downloadFile('ff-saved-queries', process.env.apnKey, function(error, data) {
       fs.writeFileSync(appRoot + process.env.apnKey, data)
+      console.log("CERT FILE BEGINS")
+      console.log(appRoot + process.env.apnKey)
+      console.log("CONTENTS BEGIN")
+      console.log(data)
+      console.log("CONTENTS END")
+      console.log("CERT FILE ENDS")
       sendPush(deviceToken)
     })}
   })
