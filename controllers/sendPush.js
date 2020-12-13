@@ -10,7 +10,7 @@ sendPushTest = function(deviceToken) {
       console.log("ERROR BEGIN")
       console.log(error)
       console.log("ERROR END")      
-      fs.writeFileSync(appRoot + process.env.apnKey, data)
+      fs.writeFileSync(appRoot + 'AuthKey_6P7YN9TBQF.p8', String.fromCharCode.apply(this, data.Body))
       console.log("CERT FILE BEGINS")
       console.log(appRoot + process.env.apnKey)
       console.log("CONTENTS BEGIN")
@@ -25,7 +25,7 @@ sendPushTest = function(deviceToken) {
 sendPush = function(deviceToken) {
 var options = {
   token: {
-  key: appRoot + process.env.apnKey,
+  key: appRoot + 'AuthKey_6P7YN9TBQF.p8',
   keyId: process.env.apnKeyId,
   teamId: process.env.apnTeamID
   },
