@@ -5,12 +5,12 @@ const s3 = require('./s3');
 const fs = require('fs');
 
 sendPushTest = function(deviceToken) {
-  if (!fs.exists(appRoot + '/controllers' + process.env.apnKey)) {
+  if (!fs.exists(appRoot + '/controllers' + process.env.apnKey, (exists) => {
     s3.downloadFile('ff-saved-queries', process.env.apnKey, function(error, data) {
       fs.writeFileSync(appRoot + '/controllers' + process.env.apnKey, data)
       sendPush(deviceToken)
     })
-  }
+  })) 
 }
 
 sendPush = function(deviceToken) {
