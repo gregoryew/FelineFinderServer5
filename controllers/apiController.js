@@ -1,5 +1,5 @@
 const Searches = require('../models/search');
-const userIdTokenMappings = require('../models/userIdTokenMappings');
+const userIdTokenMappings = require('../models/userIdTokenMapping');
 const bodyParser = require('body-parser');
 const rq = require('aif-request');
 const fs = require('fs');
