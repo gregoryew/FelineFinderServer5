@@ -23,6 +23,9 @@ module.exports = function(app) {
                 start: s.EventDate,
                 duration: [Math.abs(s.Close - s.EventDate) / 36e5, "hour"],
             };
+            s.EventDate = "new Date(" + s.EventDate.toLocaleString('en-US', { timeZone: 'PST' }) + ")",
+            s.Open = "new Date(" + s.Open.toLocaleString('en-US', { timeZone: 'PST' }) + ")"
+            s.Close = "new Date(" + s.Close.toLocaleString('en-US', { timeZone: 'PST' }) + ")"
             s.ICM = google(event);
             s.ICS = ics(event);
         }
