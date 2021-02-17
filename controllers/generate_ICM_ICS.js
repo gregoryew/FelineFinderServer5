@@ -3,7 +3,7 @@ module.exports = function(app) {
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: true }));
 
-    app.post('/api/schedule', function(req, res) {
+    app.get('/api/schedule', function(req, res) {
         res.send(schedule);
     }
 }
