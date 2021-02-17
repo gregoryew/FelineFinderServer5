@@ -19,7 +19,7 @@ module.exports = function(app) {
         for (s of schedule) {
             const event = {
                 title: s.Name,
-                description: '<a href="' + s.ZoomLink + '"> Join Meeting </a>',
+                description: '<a href="' + s.bitly + '"> Join Meeting </a>',
                 start: s.EventDate,
                 duration: [Math.abs(new Date(s.Close) - new Date(s.EventDate)) / 36e5, "hour"],
             };
