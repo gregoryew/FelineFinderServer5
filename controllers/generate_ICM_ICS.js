@@ -4,6 +4,6 @@ module.exports = function(app) {
     app.use(bodyParser.urlencoded({ extended: true }));
 
     app.get('/api/schedule', function(req, res) {
-        res.send(schedule);
+        json.send(schedule);
     }
 }
