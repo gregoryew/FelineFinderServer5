@@ -1,9 +1,7 @@
-let schedule = require('./schedule');
+const schedule = require('schedule');
 module.exports = function(app) {
-    app.use(bodyParser.json());
-    app.use(bodyParser.urlencoded({ extended: true }));
-
     app.get('/api/schedule', function(req, res) {
+        console.writeln(JSON.stringify(schedule));
         json.send(schedule);
     }
 }
