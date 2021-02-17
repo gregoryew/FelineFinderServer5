@@ -1,4 +1,4 @@
-module.exports = function() {return [
+module.exports = [
     {
         "Name": "Orientation/Opening",
         "EventDate": "2/19/2021 7:00 pm pst",
@@ -407,5 +407,4 @@ module.exports = function() {return [
         "ICM": "https://zoom.us/meeting/tZMufuqtrD8iE9YHg6hf0Z95prBVg_B1RRTP/calendar/google/add",
         "ICS": "https://zoom.us/meeting/tZMufuqtrD8iE9YHg6hf0Z95prBVg_B1RRTP/ics"
      }
-    ];
-}
+    ]
