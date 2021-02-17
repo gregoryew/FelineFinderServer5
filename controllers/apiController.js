@@ -7,11 +7,17 @@ const appRoot = require('app-root-path');
 const axios = require('axios');
 const s3 = require('./s3.js');
 const sendPush = require('./sendPush.js');
+const schedule = require('./schedule.js');
 
 module.exports = function(app) {
     
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: true }));
+    
+    app.get('/api/schedule', function(req, res) {
+        console.log(JSON.stringify(schedule));
+        res.send(schedule);
+    })
     
     app.get('/api/pushTest', function(req, res) {
         sendPush.sendPushTest()
