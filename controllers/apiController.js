@@ -8,6 +8,7 @@ const axios = require('axios');
 const s3 = require('./s3.js');
 const sendPush = require('./sendPush.js');
 const schedule = require('./schedule.js');
+const { google, ics } = require("calendar-link");
 
 module.exports = function(app) {
     
@@ -15,7 +16,16 @@ module.exports = function(app) {
     app.use(bodyParser.urlencoded({ extended: true }));
     
     app.get('/api/schedule', function(req, res) {
-        console.log(JSON.stringify(schedule));
+        for (s of schedule) {
+            const event = {
+                title: s.Name,
+                description: "",
+                start: s.EventDate,
+                duration: [Math.abs(s.Close - s.EventDate) / 36e5, "hour"],
+            };
+            s.ICM = google(event);
+            s.ICS = ics(event);
+        }
         res.send(schedule);
     })
     
