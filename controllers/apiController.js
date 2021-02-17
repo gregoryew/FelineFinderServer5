@@ -21,7 +21,7 @@ module.exports = function(app) {
                 title: s.Name,
                 description: "",
                 start: s.EventDate,
-                duration: [Math.abs(s.Close - s.EventDate) / 36e5, "hour"],
+                duration: [Math.abs(new Date(s.Close) - new Date(s.EventDate)) / 36e5, "hour"],
             };
             s.ICM = google(event);
             s.ICS = ics(event);
