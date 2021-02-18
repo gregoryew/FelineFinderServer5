@@ -7,8 +7,8 @@ module.exports = [
       "Host": "Garrick Mobile",
       "Facilitator": "Ed Wahl",
       "ZoomLink": "https://us02web.zoom.us/j/81637965677?pwd=WklVaFFFZStoTEs5MjVNYkZPUDJQZz09",
-      "bitly": "http://bit.ly/CMG2021",
-      "MeetingID": "816 3796 5677",
+      "bitly": "hhttp://bit.ly/opening99",
+      "MeetingID": "893 8441 5823",
       "Password": "CMG99",
       "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T030000Z%2F20210220T050000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FCMG2021%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Orientation%2FOpening",
       "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T030000Z%0ADTEND:20210220T050000Z%0ASUMMARY:Orientation%2FOpening%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FCMG2021%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
@@ -80,8 +80,8 @@ module.exports = [
       "bitly": "http://bit.ly/S1-WS1",
       "MeetingID": "844 0881 5062",
       "Password": "CMG99",
-      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T210000Z%2F20210220T230000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS1%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Workshop%201",
-      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T210000Z%0ADTEND:20210220T230000Z%0ASUMMARY:Workshop%201%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS1%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T210000Z%2F20210220T230000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS1%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=BIPOC%20Table%20Talk%20presented%20by%20John%20Torres",
+      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T210000Z%0ADTEND:20210220T230000Z%0ASUMMARY:BIPOC%20Table%20Talk%20presented%20by%20John%20Torres%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS1%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
     },
     {
       "Name": "Cardio aerobics workout class presented by Chuck Louden",
@@ -94,8 +94,8 @@ module.exports = [
       "bitly": "http://bit.ly/S1-WS2",
       "MeetingID": "874 1293 8407",
       "Password": "CMG99",
-      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T210000Z%2F20210220T230000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS2%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Workshop%202",
-      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T210000Z%0ADTEND:20210220T230000Z%0ASUMMARY:Workshop%202%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS2%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T210000Z%2F20210220T230000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS2%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Cardio%20aerobics%20workout%20class%20presented%20by%20Chuck%20Louden",
+      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T210000Z%0ADTEND:20210220T230000Z%0ASUMMARY:Cardio%20aerobics%20workout%20class%20presented%20by%20Chuck%20Louden%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS2%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
     },
     {
       "Name": "The Osho BODY MOVEMENT MEDITATION: presented by Mark Hollenstein & Dr. Jallen Rix",
@@ -108,8 +108,8 @@ module.exports = [
       "bitly": "http://bit.ly/S1-WS3",
       "MeetingID": "840 1920 1834",
       "Password": "CMG99",
-      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T210000Z%2F20210220T230000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS3%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Workshop%203",
-      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T210000Z%0ADTEND:20210220T230000Z%0ASUMMARY:Workshop%203%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS3%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T210000Z%2F20210220T230000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS3%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=The%20Osho%20BODY%20MOVEMENT%20MEDITATION%3A%20presented%20by%20Mark%20Hollenstein%20%26%20Dr.%20Jallen%20Rix",
+      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T210000Z%0ADTEND:20210220T230000Z%0ASUMMARY:The%20Osho%20BODY%20MOVEMENT%20MEDITATION%3A%20presented%20by%20Mark%20Hollenstein%20%26%20Dr.%20Jallen%20Rix%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS3%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
     },
     {
       "Name": "Help the Archivist! Presented by Monzo",
@@ -122,8 +122,8 @@ module.exports = [
       "bitly": "http://bit.ly/S1-WS4",
       "MeetingID": "884 2798 7139",
       "Password": "CMG99",
-      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T210000Z%2F20210220T230000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS4%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Workshop%204",
-      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T210000Z%0ADTEND:20210220T230000Z%0ASUMMARY:Workshop%204%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS4%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T210000Z%2F20210220T230000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS4%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Help%20the%20Archivist%21%20Presented%20by%20Monzo",
+      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T210000Z%0ADTEND:20210220T230000Z%0ASUMMARY:Help%20the%20Archivist!%20Presented%20by%20Monzo%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS4%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
     },
     {
       "Name": "Buddhist Mindfulness Meditation presented by Patrick Knisely",
@@ -136,8 +136,8 @@ module.exports = [
       "bitly": "http://bit.ly/S1-WS5",
       "MeetingID": "830 6045 7397",
       "Password": "CMG99",
-      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T210000Z%2F20210221T004500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS5%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Workshop%205",
-      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T210000Z%0ADTEND:20210221T004500Z%0ASUMMARY:Workshop%205%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS5%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T210000Z%2F20210221T004500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS5%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Buddhist%20Mindfulness%20Meditation%20presented%20by%20Patrick%20Knisely",
+      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T210000Z%0ADTEND:20210221T004500Z%0ASUMMARY:Buddhist%20Mindfulness%20Meditation%20presented%20by%20Patrick%20Knisely%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS5%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
     },
     {
       "Name": "Naked Poetry presented by Lorenzo Taylor",
@@ -150,8 +150,8 @@ module.exports = [
       "bitly": "http://bit.ly/S2-WS6",
       "MeetingID": "841 1147 6013",
       "Password": "CMG99",
-      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T230000Z%2F20210221T004500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS2-WS6%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Workshop%206",
-      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T230000Z%0ADTEND:20210221T004500Z%0ASUMMARY:Workshop%206%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS2-WS6%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T230000Z%2F20210221T004500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS2-WS6%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Naked%20Poetry%20presented%20by%20Lorenzo%20Taylor",
+      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T230000Z%0ADTEND:20210221T004500Z%0ASUMMARY:Naked%20Poetry%20presented%20by%20Lorenzo%20Taylor%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS2-WS6%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
     },
     {
       "Name": "Jackbox Party Games-Social Gaming Session presented by Traye Turner",
@@ -164,8 +164,8 @@ module.exports = [
       "bitly": "http://bit.ly/S2-WS7",
       "MeetingID": "810 0966 1958",
       "Password": "CMG99",
-      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T230000Z%2F20210221T004500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS2-WS7%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Workshop%207",
-      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T230000Z%0ADTEND:20210221T004500Z%0ASUMMARY:Workshop%207%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS2-WS7%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T230000Z%2F20210221T004500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS2-WS7%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Jackbox%20Party%20Games-Social%20Gaming%20Session%20presented%20by%20Traye%20Turner",
+      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T230000Z%0ADTEND:20210221T004500Z%0ASUMMARY:Jackbox%20Party%20Games-Social%20Gaming%20Session%20presented%20by%20Traye%20Turner%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS2-WS7%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
     },
     {
       "Name": "Awakening the Soul of Elderhood presented by Jim Ruboyianes, Mike Fahy",
@@ -178,8 +178,8 @@ module.exports = [
       "bitly": "http://bit.ly/S2-WS8",
       "MeetingID": "859 5047 1862",
       "Password": "CMG99",
-      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T230000Z%2F20210221T004500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS2-WS8%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Workshop%208",
-      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T230000Z%0ADTEND:20210221T004500Z%0ASUMMARY:Workshop%208%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS2-WS8%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T230000Z%2F20210221T004500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS2-WS8%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Awakening%20the%20Soul%20of%20Elderhood%20presented%20by%20Jim%20Ruboyianes%2C%20Mike%20Fahy",
+      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T230000Z%0ADTEND:20210221T004500Z%0ASUMMARY:Awakening%20the%20Soul%20of%20Elderhood%20presented%20by%20Jim%20Ruboyianes%2C%20Mike%20Fahy%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS2-WS8%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
     },
     {
       "Name": "Journeying Experience Workshop presented by Ben~Andy",
@@ -192,8 +192,8 @@ module.exports = [
       "bitly": "http://bit.ly/S2-WS9",
       "MeetingID": "861 5604 1434",
       "Password": "CMG99",
-      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T230000Z%2F20210221T004500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS2-WS9%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Workshop%209",
-      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T230000Z%0ADTEND:20210221T004500Z%0ASUMMARY:Workshop%209%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS2-WS9%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T230000Z%2F20210221T004500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS2-WS9%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Journeying%20Experience%20Workshop%20presented%20by%20Ben~Andy",
+      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T230000Z%0ADTEND:20210221T004500Z%0ASUMMARY:Journeying%20Experience%20Workshop%20presented%20by%20Ben~Andy%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS2-WS9%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
     },
     {
       "Name": "American Top 40 Mythology: A Soundtrack to Individuation presented by Gonzalo Venecia",
@@ -206,8 +206,8 @@ module.exports = [
       "bitly": "http://bit.ly/S2-WS10",
       "MeetingID": "894 3998 2117",
       "Password": "CMG99",
-      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T230000Z%2F20210221T004500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS2-WS10%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Workshop%2010",
-      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T230000Z%0ADTEND:20210221T004500Z%0ASUMMARY:Workshop%2010%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS2-WS10%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T230000Z%2F20210221T004500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS2-WS10%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=American%20Top%2040%20Mythology%3A%20A%20Soundtrack%20to%20Individuation%20presented%20by%20Gonzalo%20Venecia",
+      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T230000Z%0ADTEND:20210221T004500Z%0ASUMMARY:American%20Top%2040%20Mythology%3A%20A%20Soundtrack%20to%20Individuation%20presented%20by%20Gonzalo%20Venecia%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS2-WS10%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
     },
     {
       "Name": "Dinner/Social",
@@ -256,14 +256,14 @@ module.exports = [
       "EventDate": "2/20/2021 9:00 pm pst",
       "Open": "2/20/2021 9:00 pm pst",
       "Close": "2/20/2021 12:00 am pst",
-      "Host": "",
+      "Host": "Register <a href='http://bit.ly/intimacyritual'>here</a>",
       "Facilitator": "JoJo Bear",
-      "ZoomLink": "https://us02web.zoom.us/meeting/register/tZItdeCrqD4oEtYLq3wG_8C6FlggQRqdQacq",
-      "bitly": "http://bit.ly/intimacyritual",
+      "ZoomLink": "",
+      "bitly": "",
       "MeetingID": "",
       "Password": "CMG99",
-      "ICM": "",
-      "ICS": ""
+      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T050000Z%2F20210222T020000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fintimacyritual%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Jo%20Jo%20Intimacy%20Ritual",
+      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T050000Z%0ADTEND:20210222T020000Z%0ASUMMARY:Jo%20Jo%20Intimacy%20Ritual%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fintimacyritual%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
     },
     {
       "Name": "Yoga/Exercise",
@@ -318,8 +318,8 @@ module.exports = [
       "bitly": "http://bit.ly/S3-WS11",
       "MeetingID": "881 1380 7611",
       "Password": "CMG99",
-      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T210000Z%2F20210222T191500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS3-WS11%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Workshop%2011",
-      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T210000Z%0ADTEND:20210222T191500Z%0ASUMMARY:Workshop%2011%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS3-WS11%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T210000Z%2F20210222T191500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS3-WS11%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Anti-Racism%20Roundtable%20presented%20by%20Ben~Andy%20and%20others",
+      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T210000Z%0ADTEND:20210222T191500Z%0ASUMMARY:Anti-Racism%20Roundtable%20presented%20by%20Ben~Andy%20and%20others%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS3-WS11%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
     },
     {
       "Name": "Mythic Storytelling",
@@ -332,8 +332,8 @@ module.exports = [
       "bitly": "http://bit.ly/S3-WS12",
       "MeetingID": "883 4543 0984",
       "Password": "CMG99",
-      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T210000Z%2F20210222T191500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS3-WS12%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Workshop%2012",
-      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T210000Z%0ADTEND:20210222T191500Z%0ASUMMARY:Workshop%2012%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS3-WS12%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T210000Z%2F20210222T191500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS3-WS12%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Mythic%20Storytelling",
+      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T210000Z%0ADTEND:20210222T191500Z%0ASUMMARY:Mythic%20Storytelling%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS3-WS12%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
     },
     {
       "Name": "The Four Agreements presented by Damian Goldvarg",
@@ -346,8 +346,8 @@ module.exports = [
       "bitly": "http://bit.ly/S1-WS13",
       "MeetingID": "857 4308 0732",
       "Password": "CMG99",
-      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T210000Z%2F20210222T191500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS13%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Workshop%2013",
-      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T210000Z%0ADTEND:20210222T191500Z%0ASUMMARY:Workshop%2013%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS13%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T210000Z%2F20210222T191500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS13%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=The%20Four%20Agreements%20presented%20by%20Damian%20Goldvarg",
+      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T210000Z%0ADTEND:20210222T191500Z%0ASUMMARY:The%20Four%20Agreements%20presented%20by%20Damian%20Goldvarg%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS13%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
     },
     {
       "Name": "Vortex Healing Meditation presented by Ed Brophy",
@@ -360,8 +360,8 @@ module.exports = [
       "bitly": "http://bit.ly/S1-WS14",
       "MeetingID": "890 9073 8089",
       "Password": "CMG99",
-      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T210000Z%2F20210222T191500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS14%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Workshop%2014",
-      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T210000Z%0ADTEND:20210222T191500Z%0ASUMMARY:Workshop%2014%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS14%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T210000Z%2F20210222T191500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS14%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Vortex%20Healing%20Meditation%20presented%20by%20Ed%20Brophy",
+      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T210000Z%0ADTEND:20210222T191500Z%0ASUMMARY:Vortex%20Healing%20Meditation%20presented%20by%20Ed%20Brophy%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS14%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
     },
     {
       "Name": "Heart Circle presented by Charlie Malarkey",
@@ -374,8 +374,8 @@ module.exports = [
       "bitly": "http://bit.ly/S1-WS15",
       "MeetingID": "875 1257 4739",
       "Password": "CMG99",
-      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T210000Z%2F20210222T191500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS15%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Workshop%2015",
-      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T210000Z%0ADTEND:20210222T191500Z%0ASUMMARY:Workshop%2015%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS15%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T210000Z%2F20210222T191500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS15%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Heart%20Circle%20presented%20by%20Charlie%20Malarkey",
+      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T210000Z%0ADTEND:20210222T191500Z%0ASUMMARY:Heart%20Circle%20presented%20by%20Charlie%20Malarkey%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS15%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
     },
     {
       "Name": "Circle of Concerns",
