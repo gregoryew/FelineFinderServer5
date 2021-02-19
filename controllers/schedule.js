@@ -7,11 +7,11 @@ module.exports = [
       "Host": "Garrick Mobile",
       "Facilitator": "Ed Wahl",
       "ZoomLink": "https://us02web.zoom.us/j/81637965677?pwd=WklVaFFFZStoTEs5MjVNYkZPUDJQZz09",
-      "bitly": "hhttp://bit.ly/opening99",
+      "bitly": "http://bit.ly/opening99",
       "MeetingID": "893 8441 5823",
       "Password": "CMG99",
-      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T030000Z%2F20210220T050000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FCMG2021%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Orientation%2FOpening",
-      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T030000Z%0ADTEND:20210220T050000Z%0ASUMMARY:Orientation%2FOpening%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FCMG2021%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T030000Z%2F20210220T050000Z&details=%3Ca%20href%3D%22hhttp%3A%2F%2Fbit.ly%2Fopening99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Orientation%2FOpening",
+      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T030000Z%0ADTEND:20210220T050000Z%0ASUMMARY:Orientation%2FOpening%0ADESCRIPTION:%3Ca%20href%3D%22hhttp%3A%2F%2Fbit.ly%2Fopening99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
     },
     {
       "Name": "LateNight Activities",
@@ -230,9 +230,9 @@ module.exports = [
       "Close": "2/20/2021 9:00 pm pst",
       "Host": "Garrick",
       "Facilitator": "Joshua/Ben-Andy",
-      "ZoomLink": "",
-      "bitly": "",
-      "MeetingID": "",
+      "ZoomLink": "https://us02web.zoom.us/j/89560399435?pwd=MjlRRVp6aTFwa0ZOVmVJRDBTWmVuQT09",
+      "bitly": "http://bit.ly/talent99",
+      "MeetingID": "895 6039 9435",
       "Password": "CMG99",
       "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T030000Z%2F20210221T050000Z&details=%3Ca%20href%3D%22%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Talent%2FNo%20Talent%20Show",
       "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T030000Z%0ADTEND:20210221T050000Z%0ASUMMARY:Talent%2FNo%20Talent%20Show%0ADESCRIPTION:%3Ca%20href%3D%22%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
@@ -262,8 +262,8 @@ module.exports = [
       "bitly": "",
       "MeetingID": "",
       "Password": "CMG99",
-      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T050000Z%2F20210222T020000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fintimacyritual%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Jo%20Jo%20Intimacy%20Ritual",
-      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T050000Z%0ADTEND:20210222T020000Z%0ASUMMARY:Jo%20Jo%20Intimacy%20Ritual%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fintimacyritual%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+      "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T050000Z%2F20210222T020000Z&details=%3Ca%20href%3D%22%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Jo%20Jo%20Intimacy%20Ritual",
+      "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T050000Z%0ADTEND:20210222T020000Z%0ASUMMARY:Jo%20Jo%20Intimacy%20Ritual%0ADESCRIPTION:%3Ca%20href%3D%22%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
     },
     {
       "Name": "Yoga/Exercise",
