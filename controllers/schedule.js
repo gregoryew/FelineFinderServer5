@@ -24,8 +24,8 @@ module.exports = [
     "bitly": "http://bit.ly/latenight99",
     "MeetingID": "817 1710 9566",
     "Password": "CMG99",
-    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T050000Z%2F20210220T140000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Flatenight99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Virtual%20Dance%20Party",
-    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T050000Z%0ADTEND:20210220T140000Z%0ASUMMARY:Virtual%20Dance%20Party%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Flatenight99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T050000Z%2F20210220T075900Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Flatenight99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Virtual%20Dance%20Party",
+    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T050000Z%0ADTEND:20210220T075900Z%0ASUMMARY:Virtual%20Dance%20Party%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Flatenight99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
     "Name": "A Night of Assasins",
@@ -38,8 +38,8 @@ module.exports = [
     "bitly": "http://bit.ly/assasins99",
     "MeetingID": "882 0291 3416",
     "Password": "CMG99",
-    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T050000Z%2F20210220T140000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fassasins99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=A%20Night%20of%20Assasins",
-    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T050000Z%0ADTEND:20210220T140000Z%0ASUMMARY:A%20Night%20of%20Assasins%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fassasins99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T050000Z%2F20210220T075900Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fassasins99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=A%20Night%20of%20Assasins",
+    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T050000Z%0ADTEND:20210220T075900Z%0ASUMMARY:A%20Night%20of%20Assasins%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fassasins99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
     "Name": "Friday Night Heart Circle",
@@ -49,11 +49,11 @@ module.exports = [
     "Host": "",
     "Facilitator": "Mike Fahy",
     "ZoomLink": "https://us02web.zoom.us/j/81361134675?pwd=c3BpVHpPTUp4cjMvNzR4ZlBINTdMUT09",
-    "bitly": "http://bit.ly/satheart99",
+    "bitly": "http://bit.ly/friheart99",
     "MeetingID": "813 6113 4675",
     "Password": "CMG99",
-    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T050000Z%2F20210220T140000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fsatheart99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Heart%20Circle",
-    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T050000Z%0ADTEND:20210220T140000Z%0ASUMMARY:Heart%20Circle%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fsatheart99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T050000Z%2F20210220T075900Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fsatheart99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Friday%20Night%20Heart%20Circle",
+    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T050000Z%0ADTEND:20210220T075900Z%0ASUMMARY:Friday%20Night%20Heart%20Circle%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fsatheart99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
     "Name": "Yoga/Exercise",
@@ -144,7 +144,7 @@ module.exports = [
     "EventDate": "2/20/2021 1:00 pm pst",
     "Open": "2/20/2021 12:45 pm pst",
     "Close": "2/20/2021 3:00 pm pst",
-    "Host": "Joe Wagenhofer",
+    "Host": "Mike Fahy",
     "Facilitator": "Monzo",
     "ZoomLink": "https://us02web.zoom.us/j/88427987139?pwd=OU40Ly9TeGE3d1UrZHJYODMyRXlMQT09",
     "bitly": "http://bit.ly/S1-WS4",
@@ -186,7 +186,7 @@ module.exports = [
     "EventDate": "2/20/2021 3:00 pm pst",
     "Open": "2/20/2021 2:45 pm pst",
     "Close": "2/20/2021 4:45 pm pst",
-    "Host": "Phil Carberry",
+    "Host": "",
     "Facilitator": "Traye Turner",
     "ZoomLink": "https://us02web.zoom.us/j/81009661958?pwd=d0lmZTdQRFdKVXZCYThaNnRUdy9RZz09",
     "bitly": "http://bit.ly/S2-WS7",
@@ -228,7 +228,7 @@ module.exports = [
     "EventDate": "2/20/2021 3:00 pm pst",
     "Open": "2/20/2021 2:45 pm pst",
     "Close": "2/20/2021 4:45 pm pst",
-    "Host": "",
+    "Host": "Phil Carberry",
     "Facilitator": "Gonzalo Venecia",
     "ZoomLink": "https://us02web.zoom.us/j/89439982117?pwd=ZFMrbytHN1o0VXdrS1Bla0NxVWk5QT09",
     "bitly": "http://bit.ly/S2-WS10",
@@ -276,8 +276,8 @@ module.exports = [
     "bitly": "http://bit.ly/latenight99",
     "MeetingID": "817 1710 9566",
     "Password": "CMG99",
-    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T050000Z%2F20210221T140000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Flatenight99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Virtual%20Dance%20Party",
-    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T050000Z%0ADTEND:20210221T140000Z%0ASUMMARY:Virtual%20Dance%20Party%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Flatenight99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T050000Z%2F20210221T140100Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Flatenight99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Virtual%20Dance%20Party",
+    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T050000Z%0ADTEND:20210221T140100Z%0ASUMMARY:Virtual%20Dance%20Party%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Flatenight99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
     "Name": "Sex Magick Moon-light Ritual",
@@ -286,12 +286,12 @@ module.exports = [
     "Close": "2/20/2021 11:59 pm pst",
     "Host": "Register <a href='http://bit.ly/intimacyritual'><b>Here</b></a>",
     "Facilitator": "JoJo Bear",
-    "ZoomLink": "",
-    "bitly": "",
-    "MeetingID": "",
+    "ZoomLink": "https://us02web.zoom.us/meeting/register/tZItdeCrqD4oEtYLq3wG_8C6FlggQRqdQacq",
+    "bitly": "http://bit.ly/intimacyritual",
+    "MeetingID": "860 2936 5282",
     "Password": "CMG99",
-    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T050000Z%2F20210221T140000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fintimacyritual%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Jo%20Jo%20Intimacy%20Ritual",
-    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T050000Z%0ADTEND:20210221T140000Z%0ASUMMARY:Jo%20Jo%20Intimacy%20Ritual%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fintimacyritual%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T050000Z%2F20210221T075900Z&details=%3Ca%20href%3D%22%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Sex%20Magick%20Moon-light%20Ritual",
+    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T050000Z%0ADTEND:20210221T075900Z%0ASUMMARY:Sex%20Magick%20Moon-light%20Ritual%0ADESCRIPTION:%3Ca%20href%3D%22%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
     "Name": "Star Walk",
@@ -300,12 +300,12 @@ module.exports = [
     "Close": "2/20/2021 11:59 pm pst",
     "Host": "",
     "Facilitator": "Bob Goodman",
-    "ZoomLink": "",
-    "bitly": "",
-    "MeetingID": "",
+    "ZoomLink": "https://us02web.zoom.us/j/89089818095?pwd=QmZLT1JscVFsaFNXQlZmdmwxU0Fpdz09",
+    "bitly": "http://bit.ly/starwalk99",
+    "MeetingID": "890 8981 8095",
     "Password": "CMG99",
-    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T050000Z%2F20210220T140000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fsatheart99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Heart%20Circle",
-    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T050000Z%0ADTEND:20210220T140000Z%0ASUMMARY:Heart%20Circle%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fsatheart99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T050000Z%2F20210221T075900Z&details=%3Ca%20href%3D%22%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Star%20Walk",
+    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T050000Z%0ADTEND:20210221T075900Z%0ASUMMARY:Star%20Walk%0ADESCRIPTION:%3Ca%20href%3D%22%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
     "Name": "Heart Circle",
@@ -318,8 +318,8 @@ module.exports = [
     "bitly": "http://bit.ly/satheart99",
     "MeetingID": "813 6113 4675",
     "Password": "CMG99",
-    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T050000Z%2F20210220T140000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fsatheart99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Heart%20Circle",
-    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T050000Z%0ADTEND:20210220T140000Z%0ASUMMARY:Heart%20Circle%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fsatheart99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T050000Z%2F20210221T075900Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fsatheart99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Heart%20Circle",
+    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T050000Z%0ADTEND:20210221T075900Z%0ASUMMARY:Heart%20Circle%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fsatheart99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
     "Name": "Yoga/Exercise",
@@ -332,8 +332,8 @@ module.exports = [
     "bitly": "http://bit.ly/morning99",
     "MeetingID": "894 5208 4320",
     "Password": "CMG99",
-    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T160000Z%2F20210220T180000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fmorning99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Yoga%2FExercise",
-    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T160000Z%0ADTEND:20210220T180000Z%0ASUMMARY:Yoga%2FExercise%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fmorning99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T160000Z%2F20210221T180000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fmorning99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Yoga%2FExercise",
+    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T160000Z%0ADTEND:20210221T180000Z%0ASUMMARY:Yoga%2FExercise%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fmorning99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
     "Name": "Indigenous Perspectives Ritual",
@@ -346,8 +346,8 @@ module.exports = [
     "bitly": "http://bit.ly/assembly99",
     "MeetingID": "848 4481 5729",
     "Password": "CMG99",
-    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T180000Z%2F20210222T161500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fassembly99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Indigenous%20Perspectives%20Ritual",
-    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T180000Z%0ADTEND:20210222T161500Z%0ASUMMARY:Indigenous%20Perspectives%20Ritual%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fassembly99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T180000Z%2F20210221T194500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fassembly99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Indigenous%20Perspectives%20Ritual",
+    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T180000Z%0ADTEND:20210221T194500Z%0ASUMMARY:Indigenous%20Perspectives%20Ritual%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fassembly99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
     "Name": "Lunchtime Social",
@@ -360,8 +360,8 @@ module.exports = [
     "bitly": "http://bit.ly/CMG2021",
     "MeetingID": "816 3796 5677",
     "Password": "CMG99",
-    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T194500Z%2F20210222T183000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FCMG2021%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Lunchtime%20Social",
-    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T194500Z%0ADTEND:20210222T183000Z%0ASUMMARY:Lunchtime%20Social%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FCMG2021%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T194500Z%2F20210221T210000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FCMG2021%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Lunchtime%20Social",
+    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T194500Z%0ADTEND:20210221T210000Z%0ASUMMARY:Lunchtime%20Social%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FCMG2021%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
     "Name": "Anti-Racism Roundtable",
@@ -374,8 +374,8 @@ module.exports = [
     "bitly": "http://bit.ly/S3-WS11",
     "MeetingID": "881 1380 7611",
     "Password": "CMG99",
-    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T210000Z%2F20210222T191500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS3-WS11%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Anti-Racism%20Roundtable",
-    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T210000Z%0ADTEND:20210222T191500Z%0ASUMMARY:Anti-Racism%20Roundtable%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS3-WS11%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T210000Z%2F20210221T224500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS3-WS11%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Anti-Racism%20Roundtable",
+    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T210000Z%0ADTEND:20210221T224500Z%0ASUMMARY:Anti-Racism%20Roundtable%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS3-WS11%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
     "Name": "Mythic Storytelling",
@@ -388,8 +388,8 @@ module.exports = [
     "bitly": "http://bit.ly/S3-WS12",
     "MeetingID": "883 4543 0984",
     "Password": "CMG99",
-    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T210000Z%2F20210222T191500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS3-WS12%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Mythic%20Storytelling",
-    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T210000Z%0ADTEND:20210222T191500Z%0ASUMMARY:Mythic%20Storytelling%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS3-WS12%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T210000Z%2F20210221T224500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS3-WS12%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Mythic%20Storytelling",
+    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T210000Z%0ADTEND:20210221T224500Z%0ASUMMARY:Mythic%20Storytelling%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS3-WS12%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
     "Name": "The Four Agreements",
@@ -402,8 +402,8 @@ module.exports = [
     "bitly": "http://bit.ly/S1-WS13",
     "MeetingID": "857 4308 0732",
     "Password": "CMG99",
-    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T210000Z%2F20210222T191500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS13%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=The%20Four%20Agreements",
-    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T210000Z%0ADTEND:20210222T191500Z%0ASUMMARY:The%20Four%20Agreements%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS13%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T210000Z%2F20210221T224500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS13%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=The%20Four%20Agreements",
+    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T210000Z%0ADTEND:20210221T224500Z%0ASUMMARY:The%20Four%20Agreements%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS13%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
     "Name": "Vortex Healing Meditation",
@@ -416,8 +416,8 @@ module.exports = [
     "bitly": "http://bit.ly/S1-WS14",
     "MeetingID": "890 9073 8089",
     "Password": "CMG99",
-    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T210000Z%2F20210222T191500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS14%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Vortex%20Healing%20Meditation",
-    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T210000Z%0ADTEND:20210222T191500Z%0ASUMMARY:Vortex%20Healing%20Meditation%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS14%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T210000Z%2F20210221T224500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS14%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Vortex%20Healing%20Meditation",
+    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T210000Z%0ADTEND:20210221T224500Z%0ASUMMARY:Vortex%20Healing%20Meditation%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS14%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
     "Name": "Heart Circle",
@@ -430,8 +430,8 @@ module.exports = [
     "bitly": "http://bit.ly/S1-WS15",
     "MeetingID": "875 1257 4739",
     "Password": "CMG99",
-    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T210000Z%2F20210222T191500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS15%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Heart%20Circle",
-    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T210000Z%0ADTEND:20210222T191500Z%0ASUMMARY:Heart%20Circle%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS15%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T210000Z%2F20210221T224500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS15%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Heart%20Circle",
+    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T210000Z%0ADTEND:20210221T224500Z%0ASUMMARY:Heart%20Circle%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS15%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
     "Name": "Circle of Concerns",
@@ -444,8 +444,8 @@ module.exports = [
     "bitly": "http://bit.ly/concerns99",
     "MeetingID": "846 1668 8321",
     "Password": "CMG99",
-    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T224500Z%2F20210222T214500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fconcerns99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Circle%20of%20Concerns",
-    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T224500Z%0ADTEND:20210222T214500Z%0ASUMMARY:Circle%20of%20Concerns%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fconcerns99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T224500Z%2F20210221T234500Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fconcerns99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Circle%20of%20Concerns",
+    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T224500Z%0ADTEND:20210221T234500Z%0ASUMMARY:Circle%20of%20Concerns%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fconcerns99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
     "Name": "First Timer Debrief",
@@ -458,22 +458,22 @@ module.exports = [
     "bitly": "http://bit.ly/debrief99",
     "MeetingID": "876 4031 2122",
     "Password": "CMG99",
-    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T234500Z%2F20210222T223000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fdebrief99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=First%20Timer%20Debrief",
-    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T234500Z%0ADTEND:20210222T223000Z%0ASUMMARY:First%20Timer%20Debrief%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fdebrief99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T234500Z%2F20210222T010000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fdebrief99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=First%20Timer%20Debrief",
+    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T234500Z%0ADTEND:20210222T010000Z%0ASUMMARY:First%20Timer%20Debrief%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fdebrief99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
     "Name": "Closing Assembly",
     "EventDate": "2/21/2021 5:00 pm pst",
     "Open": "2/21/2021 4:30 pm pst",
-    "Close": "2/21/2021 12:00 am pst",
+    "Close": "2/21/2021 7:00 pm pst",
     "Host": "Garrick",
     "Facilitator": "Ed Wahl",
     "ZoomLink": "https://us02web.zoom.us/j/87393524892?pwd=aWxqZnI3L2JwZWFYMmMvS0I2MjBUUT09",
     "bitly": "http://bit.ly/closing99",
     "MeetingID": "873 9352 4892",
     "Password": "CMG99",
-    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210222T010000Z%2F20210223T180000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fclosing99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Closing%20Assembly",
-    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210222T010000Z%0ADTEND:20210223T180000Z%0ASUMMARY:Closing%20Assembly%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fclosing99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210222T010000Z%2F20210222T180000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fclosing99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Closing%20Assembly",
+    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210222T010000Z%0ADTEND:20210222T180000Z%0ASUMMARY:Closing%20Assembly%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fclosing99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
     "Name": "A Night of Assasins",
@@ -486,7 +486,7 @@ module.exports = [
     "bitly": "http://bit.ly/assasins99",
     "MeetingID": "882 0291 3416",
     "Password": "CMG99",
-    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T050000Z%2F20210221T140000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fassasins99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=A%20Night%20of%20Assasins",
-    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T050000Z%0ADTEND:20210221T140000Z%0ASUMMARY:A%20Night%20of%20Assasins%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fassasins99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210222T030000Z%2F20210222T060000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fassasins99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=A%20Night%20of%20Assasins",
+    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210222T030000Z%0ADTEND:20210222T060000Z%0ASUMMARY:A%20Night%20of%20Assasins%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fassasins99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   }
 ]
