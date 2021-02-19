@@ -27,13 +27,13 @@ module.exports = [
     "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T050000Z%2F20210220T140000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Flatenight99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=LateNight%20Activities",
     "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T050000Z%0ADTEND:20210220T140000Z%0ASUMMARY:LateNight%20Activities%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Flatenight99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
-  {
+   {
     "Name": "A Night of Assasins",
     "EventDate": "2/19/2021 9:00 pm pst",
-    "Open": "2/19/2021 9:00 pm pst",
+    "Open": "2/19/2021 8:30 pm pst",
     "Close": "2/19/2021 12:00 pm pst",
     "Host": "",
-    "Facilitator": "Ben-Andy",
+    "Facilitator": "Ben-Andy ",
     "ZoomLink": "https://us02web.zoom.us/j/88202913416?pwd=ZVQ0aFplR1N0b2Y0bTZxNnRHTi9FZz09",
     "bitly": "http://bit.ly/assasins99",
     "MeetingID": "882 0291 3416",
@@ -44,18 +44,18 @@ module.exports = [
   {
     "Name": "Friday Night Heart Circle",
     "EventDate": "2/19/2021 9:00 pm pst",
-    "Open": "2/19/2021 9:00 pm pst",
+    "Open": "2/19/2021 8:30 pm pst",
     "Close": "2/19/2021 12:00 pm pst",
     "Host": "",
     "Facilitator": "John Soroczak",
     "ZoomLink": "https://us02web.zoom.us/j/86168500704?pwd=ckNudzBxMHF1dEg2c0ZHMnF6MVdEQT09",
-    "bitly": "http://bit.ly/friheart99",
+    "bitly": "hhttp://bit.ly/friheart99",
     "MeetingID": "861 6850 0704",
     "Password": "CMG99",
     "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T050000Z%2F20210220T140000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Flatenight99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=LateNight%20Activities",
     "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T050000Z%0ADTEND:20210220T140000Z%0ASUMMARY:LateNight%20Activities%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Flatenight99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
-  {
+ {
     "Name": "Yoga/Exercise",
     "EventDate": "2/20/2021 8:00 am pst",
     "Open": "2/20/2021 8:00 am pst",
@@ -98,7 +98,7 @@ module.exports = [
     "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T194500Z%0ADTEND:20210220T210000Z%0ASUMMARY:Lunchtime%20Social%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FCMG2021%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
-    "Name": "BIPOC Table Talk presented by John Torres",
+    "Name": "BIPOC Table Talk",
     "EventDate": "2/20/2021 1:00 pm pst",
     "Open": "2/20/2021 12:45 pm pst",
     "Close": "2/20/2021 3:00 pm pst",
@@ -112,7 +112,7 @@ module.exports = [
     "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T210000Z%0ADTEND:20210220T230000Z%0ASUMMARY:BIPOC%20Table%20Talk%20presented%20by%20John%20Torres%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS1%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
-    "Name": "Cardio aerobics workout class presented by Chuck Louden",
+    "Name": "Cardio aerobics workout class",
     "EventDate": "2/20/2021 1:00 pm pst",
     "Open": "2/20/2021 12:45 pm pst",
     "Close": "2/20/2021 3:00 pm pst",
@@ -126,7 +126,7 @@ module.exports = [
     "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T210000Z%0ADTEND:20210220T230000Z%0ASUMMARY:Cardio%20aerobics%20workout%20class%20presented%20by%20Chuck%20Louden%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS2%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
-    "Name": "The Osho BODY MOVEMENT MEDITATION: presented by Mark Hollenstein & Dr. Jallen Rix",
+    "Name": "The Osho BODY MOVEMENT MEDITATION",
     "EventDate": "2/20/2021 1:00 pm pst",
     "Open": "2/20/2021 12:45 pm pst",
     "Close": "2/20/2021 3:00 pm pst",
@@ -140,7 +140,7 @@ module.exports = [
     "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T210000Z%0ADTEND:20210220T230000Z%0ASUMMARY:The%20Osho%20BODY%20MOVEMENT%20MEDITATION%3A%20presented%20by%20Mark%20Hollenstein%20%26%20Dr.%20Jallen%20Rix%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS3%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
-    "Name": "Help the Archivist! Presented by Monzo",
+    "Name": "Help the Archivist!",
     "EventDate": "2/20/2021 1:00 pm pst",
     "Open": "2/20/2021 12:45 pm pst",
     "Close": "2/20/2021 3:00 pm pst",
@@ -154,7 +154,7 @@ module.exports = [
     "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T210000Z%0ADTEND:20210220T230000Z%0ASUMMARY:Help%20the%20Archivist!%20Presented%20by%20Monzo%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS4%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
-    "Name": "Buddhist Mindfulness Meditation presented by Patrick Knisely",
+    "Name": "Buddhist Mindfulness Meditation",
     "EventDate": "2/20/2021 1:00 pm pst",
     "Open": "2/20/2021 12:45 pm pst",
     "Close": "2/20/2021 4:45 pm pst",
@@ -168,7 +168,7 @@ module.exports = [
     "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T210000Z%0ADTEND:20210221T004500Z%0ASUMMARY:Buddhist%20Mindfulness%20Meditation%20presented%20by%20Patrick%20Knisely%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS5%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
-    "Name": "Naked Poetry presented by Lorenzo Taylor",
+    "Name": "Naked Poetry",
     "EventDate": "2/20/2021 3:00 pm pst",
     "Open": "2/20/2021 2:45 pm pst",
     "Close": "2/20/2021 4:45 pm pst",
@@ -182,7 +182,7 @@ module.exports = [
     "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T230000Z%0ADTEND:20210221T004500Z%0ASUMMARY:Naked%20Poetry%20presented%20by%20Lorenzo%20Taylor%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS2-WS6%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
-    "Name": "Jackbox Party Games-Social Gaming Session presented by Traye Turner",
+    "Name": "Jackbox Party Games-Social Gaming Session",
     "EventDate": "2/20/2021 3:00 pm pst",
     "Open": "2/20/2021 2:45 pm pst",
     "Close": "2/20/2021 4:45 pm pst",
@@ -196,7 +196,7 @@ module.exports = [
     "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T230000Z%0ADTEND:20210221T004500Z%0ASUMMARY:Jackbox%20Party%20Games-Social%20Gaming%20Session%20presented%20by%20Traye%20Turner%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS2-WS7%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
-    "Name": "Awakening the Soul of Elderhood presented by Jim Ruboyianes, Mike Fahy",
+    "Name": "Awakening the Soul of Elderhood",
     "EventDate": "2/20/2021 3:00 pm pst",
     "Open": "2/20/2021 2:45 pm pst",
     "Close": "2/20/2021 4:45 pm pst",
@@ -210,7 +210,7 @@ module.exports = [
     "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T230000Z%0ADTEND:20210221T004500Z%0ASUMMARY:Awakening%20the%20Soul%20of%20Elderhood%20presented%20by%20Jim%20Ruboyianes%2C%20Mike%20Fahy%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS2-WS8%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
-    "Name": "Journeying Experience Workshop presented by Ben~Andy",
+    "Name": "Journeying Experience Workshop",
     "EventDate": "2/20/2021 3:00 pm pst",
     "Open": "2/20/2021 2:45 pm pst",
     "Close": "2/20/2021 4:45 pm pst",
@@ -224,7 +224,7 @@ module.exports = [
     "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T230000Z%0ADTEND:20210221T004500Z%0ASUMMARY:Journeying%20Experience%20Workshop%20presented%20by%20Ben~Andy%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS2-WS9%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
-    "Name": "American Top 40 Mythology: A Soundtrack to Individuation presented by Gonzalo Venecia",
+    "Name": "American Top 40 Mythology: A Soundtrack to Individuation",
     "EventDate": "2/20/2021 3:00 pm pst",
     "Open": "2/20/2021 2:45 pm pst",
     "Close": "2/20/2021 4:45 pm pst",
@@ -269,35 +269,7 @@ module.exports = [
     "Name": "Virtual Dance Party",
     "EventDate": "2/20/2021 9:00 pm pst",
     "Open": "2/20/2021 9:00 pm pst",
-    "Close": "2/20/2021 12:00 am pst",
-    "Host": "Frank Hermann",
-    "Facilitator": "Lamont",
-    "ZoomLink": "https://us02web.zoom.us/j/81717109566?pwd=TDlxMVJER3piZHFPc3QzdWVEcU9qZz09",
-    "bitly": "http://bit.ly/latenight99",
-    "MeetingID": "817 1710 9566",
-    "Password": "CMG99",
-    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T050000Z%2F20210222T020000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Flatenight99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Late%20Night%20Activities",
-    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T050000Z%0ADTEND:20210222T020000Z%0ASUMMARY:Late%20Night%20Activities%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Flatenight99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
-  },
-  {
-    "Name": "Jo Jo Intimacy Ritual",
-    "EventDate": "2/20/2021 9:00 pm pst",
-    "Open": "2/20/2021 9:00 pm pst",
-    "Close": "2/20/2021 12:00 am pst",
-    "Host": "Register <a href='http://bit.ly/intimacyritual'>here</a>",
-    "Facilitator": "JoJo Bear",
-    "ZoomLink": "",
-    "bitly": "",
-    "MeetingID": "",
-    "Password": "CMG99",
-    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T050000Z%2F20210222T020000Z&details=%3Ca%20href%3D%22%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Jo%20Jo%20Intimacy%20Ritual",
-    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T050000Z%0ADTEND:20210222T020000Z%0ASUMMARY:Jo%20Jo%20Intimacy%20Ritual%0ADESCRIPTION:%3Ca%20href%3D%22%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
-  },
-  {
-    "Name": "Virtual Dance Party",
-    "EventDate": "2/19/2021 9:00 pm pst",
-    "Open": "2/19/2021 8:30 pm pst",
-    "Close": "2/19/2021 12:00 pm pst",
+    "Close": "2/20/2021 12:00 pm pst",
     "Host": "Frank Hermann",
     "Facilitator": "Lamont",
     "ZoomLink": "https://us02web.zoom.us/j/81717109566?pwd=TDlxMVJER3piZHFPc3QzdWVEcU9qZz09",
@@ -308,24 +280,38 @@ module.exports = [
     "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T050000Z%0ADTEND:20210220T140000Z%0ASUMMARY:LateNight%20Activities%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Flatenight99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
-    "Name": "Star Walk",
+    "Name": "Jo Jo Intimacy Ritual",
+    "EventDate": "2/20/2021 9:00 pm pst",
+    "Open": "2/20/2021 9:00 pm pst",
+    "Close": "2/20/2021 12:00 pm pst",
+    "Host": "Register <a href='http://bit.ly/intimacyritual'><b>Here</b></a>",
+    "Facilitator": "JoJo Bear",
+    "ZoomLink": "",
+    "bitly": "http://bit.ly/intimacyritual",
+    "MeetingID": "882 0291 3416",
+    "Password": "CMG99",
+    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T050000Z%2F20210220T140000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Flatenight99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=LateNight%20Activities",
+    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T050000Z%0ADTEND:20210220T140000Z%0ASUMMARY:LateNight%20Activities%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Flatenight99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
+  },  
+  {
+    "Name": "A Night of Assasins",
     "EventDate": "2/20/2021 9:00 pm pst",
     "Open": "2/20/2021 9:00 pm pst",
     "Close": "2/20/2021 12:00 pm pst",
     "Host": "",
-    "Facilitator": "Bob Goodman",
-    "ZoomLink": "https://us02web.zoom.us/j/89089818095?pwd=QmZLT1JscVFsaFNXQlZmdmwxU0Fpdz09",
-    "bitly": "http://bit.ly/starwalk99",
-    "MeetingID": "890 8981 8095",
+    "Facilitator": "Ben-Andy ",
+    "ZoomLink": "https://us02web.zoom.us/j/88202913416?pwd=ZVQ0aFplR1N0b2Y0bTZxNnRHTi9FZz09",
+    "bitly": "http://bit.ly/assasins99",
+    "MeetingID": "882 0291 3416",
     "Password": "CMG99",
     "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T050000Z%2F20210220T140000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Flatenight99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=LateNight%20Activities",
     "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T050000Z%0ADTEND:20210220T140000Z%0ASUMMARY:LateNight%20Activities%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Flatenight99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
     "Name": "Heart Circle",
-    "EventDate": "2/20/2021 9:00 pm pst",
-    "Open": "2/20/2021 9:00 pm pst",
-    "Close": "2/20/2021 12:00 pm pst",
+    "EventDate": "2/19/2021 9:00 pm pst",
+    "Open": "2/19/2021 9:00 pm pst",
+    "Close": "2/19/2021 12:00 pm pst",
     "Host": "",
     "Facilitator": "Mike Fahy",
     "ZoomLink": "https://us02web.zoom.us/j/81361134675?pwd=c3BpVHpPTUp4cjMvNzR4ZlBINTdMUT09",
@@ -334,20 +320,6 @@ module.exports = [
     "Password": "CMG99",
     "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210220T050000Z%2F20210220T140000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Flatenight99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=LateNight%20Activities",
     "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210220T050000Z%0ADTEND:20210220T140000Z%0ASUMMARY:LateNight%20Activities%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Flatenight99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
-  },
-  {
-    "Name": "Yoga/Exercise",
-    "EventDate": "2/21/2021 8:00 am pst",
-    "Open": "2/21/2021 8:00 am pst",
-    "Close": "2/20/2021 10:00 am pst",
-    "Host": "Garrick",
-    "Facilitator": "Chuck Louden",
-    "ZoomLink": "https://us02web.zoom.us/j/89452084320?pwd=MzZVTHdZZUV6VC9BZk96QXVDaVB3dz09",
-    "bitly": "http://bit.ly/morning99",
-    "MeetingID": "894 5208 4320",
-    "Password": "CMG99",
-    "ICM": "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210221T160000Z%2F20210222T140000Z&details=%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fmorning99%22%3E%20Join%20Meeting%20%3C%2Fa%3E&text=Yoga%2FExercise",
-    "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T160000Z%0ADTEND:20210222T140000Z%0ASUMMARY:Yoga%2FExercise%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2Fmorning99%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
     "Name": "Indigenous Perspectives Ritual",
@@ -378,7 +350,7 @@ module.exports = [
     "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T194500Z%0ADTEND:20210222T183000Z%0ASUMMARY:Lunchtime%20Social%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FCMG2021%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
-    "Name": "Anti-Racism Roundtable presented by Ben~Andy and others",
+    "Name": "Anti-Racism Roundtable",
     "EventDate": "2/21/2021 1:00 pm pst",
     "Open": "2/21/2021 12:45 pm pst",
     "Close": "2/20/2021 2:45 pm pst",
@@ -406,7 +378,7 @@ module.exports = [
     "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T210000Z%0ADTEND:20210222T191500Z%0ASUMMARY:Mythic%20Storytelling%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS3-WS12%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
-    "Name": "The Four Agreements presented by Damian Goldvarg",
+    "Name": "The Four Agreements",
     "EventDate": "2/21/2021 1:00 pm pst",
     "Open": "2/21/2021 12:45 pm pst",
     "Close": "2/20/2021 2:45 pm pst",
@@ -420,7 +392,7 @@ module.exports = [
     "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T210000Z%0ADTEND:20210222T191500Z%0ASUMMARY:The%20Four%20Agreements%20presented%20by%20Damian%20Goldvarg%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS13%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
-    "Name": "Vortex Healing Meditation presented by Ed Brophy",
+    "Name": "Vortex Healing Meditation",
     "EventDate": "2/21/2021 1:00 pm pst",
     "Open": "2/21/2021 12:45 pm pst",
     "Close": "2/20/2021 2:45 pm pst",
@@ -434,7 +406,7 @@ module.exports = [
     "ICS": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20210221T210000Z%0ADTEND:20210222T191500Z%0ASUMMARY:Vortex%20Healing%20Meditation%20presented%20by%20Ed%20Brophy%0ADESCRIPTION:%3Ca%20href%3D%22http%3A%2F%2Fbit.ly%2FS1-WS14%22%3E%20Join%20Meeting%20%3C%2Fa%3E%0AEND:VEVENT%0AEND:VCALENDAR%0A"
   },
   {
-    "Name": "Heart Circle presented by Charlie Malarkey",
+    "Name": "Heart Circle",
     "EventDate": "2/21/2021 1:00 pm pst",
     "Open": "2/21/2021 12:45 pm pst",
     "Close": "2/20/2021 2:45 pm pst",
