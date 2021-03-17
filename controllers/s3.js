@@ -13,7 +13,7 @@ const uploadFile = (bucketName, fileName, query) => {
     console.log('!@!@! query after replace = ' + query);
     query = JSON.parse(query)
     query.data.filterRadius.miles = parseInt(query.data.filterRadius.miles)
-    query = stringify(query)
+    query = JSON.stringify(query)
     console.log('!@!@! query after stringify = ' + query);
     const params = {
         Bucket: bucketName, // pass your bucket name
