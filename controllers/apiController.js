@@ -84,7 +84,7 @@ module.exports = function(app) {
                 .then(function (response) {
                 //console.log('SUCCESS RESPONSE = ' + JSON.stringify(response));
                 console.log("SEARCH = " + JSON.stringify(search))
-                console.log("RESPONSE = " + cleanStringify(response))
+                //console.log("RESPONSE = " + cleanStringify(response))
                 // deviceToken, badge, sound, alert, payload, topic)
                 console.log("TOKEN = " + search.searchesWithIDs[0].token);
                 if(response && response.data && response.data.meta && response.data.meta.count) {
