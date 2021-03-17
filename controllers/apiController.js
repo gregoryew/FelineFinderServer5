@@ -57,9 +57,11 @@ module.exports = function(app) {
     function processSearches(searches) {
         //searches.find({ $or : [  {  sentPush : null }, {sentPush: {$gt:new Date(Date.now() - 24*60*60 * 1000)}} ] }, function(err, searches) {
         //    if (err) throw err;
-        console.log("SEARCHES = " + JSON.stringify(searches));   
-        for (search of searches) {
-            console.log("SEARCH = " + search);
+        console.log("SEARCHES BEGIN")
+        console.log(JSON.stringify(searches))
+        console.log("SEARCHES END")
+        for (let i in searches) {
+            console.log("SEARCH = " + searches[i]);
             s3.downloadFile('ff-saved-queries', search._id + '.json', function(err, data) {
             //fs.readFile('https://ff-saved-queries.s3.us-east-2.amazonaws.com/' + search.id + '.json', function (err, data) {
             console.log("file name = " + search._id + ".json")
@@ -93,7 +95,7 @@ module.exports = function(app) {
                             search.searchesWithIDs[0].token,
                             0,
                             "ping.aiff",
-                            response.data.meta.count + ' matches found for the saved search you named: ' + search.name,
+                            response.data.meta.count + ' matches found for the saved search you named: ' + searches[i].name,
                             {'messageFrom': 'Feline Finder'},
                             "com.gregorysiosgames.catapp")
                         }
