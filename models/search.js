@@ -10,7 +10,7 @@ let searchesSchema = new Schema({
     times: Number,
     success: Boolean,
     sentPush: Date,
-    query: Object
+    query: String
 });
 
 let Searches = mongoose.model('Searches', searchesSchema);

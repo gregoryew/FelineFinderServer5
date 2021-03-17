@@ -9,12 +9,16 @@ const s3 = new AWS.S3({
 });
 
 const uploadFile = (bucketName, fileName, query) => {
+    query = query.replace('\"', '')
+    query = JSON.parse(query)
+    query.data.filterRadius.miles = parseInt(query.data.filterRadius.miles)
+    query = stringify(query)
     const params = {
         Bucket: bucketName, // pass your bucket name
         Key:  fileName, // file will be saved as testBucket/contacts.csv
-        Body: JSON.stringify(query)
+        Body: query
     };
-    console.log('!!!!!! query = ' + JSON.stringify(query));
+    console.log('!!!!!! query = ' + query);
     console.log('********** Params = ' + JSON.stringify(params));
     console.log('********** S3 = ' + JSON.stringify(s3));
     s3.putObject(params, function(err, data) {
