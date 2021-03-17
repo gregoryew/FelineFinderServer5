@@ -151,19 +151,23 @@ module.exports = function(app) {
     });
     
     app.post('/api/user', function(req, res) {
- 
+        console.log("@@@@@@@@@UserID = " + req.body.userId)
+        console.log("@@@@@@@@@Token = " + req.body.token)
         userIdTokenMappings.findOneAndUpdate({ userId: req.body.userId }, { token: req.body.token }, options = { upsert: true }, function(error, result) {
             if (!error) {
                 // Save the document
                 result.save(function(error) {
                     if (!error) {
+                        console.log("Success")
                         res.send('Success');
                     } else {
+                        console.log("ERROR")
                         throw error;
                     }
                 });
             } else {
-                res.send('Success');
+                console.log("ERROR")
+                res.send('Error');
             }
         });
     })
