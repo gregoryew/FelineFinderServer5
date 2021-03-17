@@ -45,8 +45,12 @@ module.exports = function(app) {
                 as: "searchesWithIDs"
             }
         }]).exec(function(err, searches) {
-            if (err) {console.log("JOIN ERROR = " + err)}
-            else {processSearches(searches)}
+            if (err) {
+                console.log("JOIN ERROR = " + err)
+            } else {
+                processSearches(searches)
+                res.send("Done"); 
+            }
         });
     });
 
@@ -100,7 +104,6 @@ module.exports = function(app) {
                 });
         });
         }
-        res.send("Done"); 
     }
     
     function cleanStringify(object) {
