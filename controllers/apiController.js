@@ -36,7 +36,7 @@ module.exports = function(app) {
 
     app.get('/api/search/process', function(req, res) {
         Searches.aggregate([
-        { $match: { $or : [  {  sentPush : null }, {sentPush: {$gt:new Date(Date.now() - 24*60*60 * 1000)}} ] } },
+        { $match: { $or : [  {  sentPush : null }, { success : false  }, {sentPush: {$lt:new Date(Date.now() - 24*60*60 * 1000)}} ] }},
         {
             $lookup: {
                 from: "useridtokenmappings", // collection name in db
@@ -102,7 +102,7 @@ module.exports = function(app) {
                         console.log("Sending Message")
                         Searches.findByIdAndUpdate(searches[i]._id, {
                             lastRun: Date.now(),
-                            times: 1,
+                            times: searches[i].times + 1,
                             success: true,
                             sentPush: Date.now()
                         }, function(err, search) {
@@ -112,7 +112,14 @@ module.exports = function(app) {
                     }
                 })
                 .catch(function (error) {
-                console.log('ERROR = ' + error);
+                    Searches.findByIdAndUpdate(searches[i]._id, {
+                        lastRun: Date.now(),
+                        success: false,
+                        sentPush: null
+                    }, function(err, search) {
+                        if (err) throw err;
+                    });           
+            console.log('ERROR = ' + error);
                 });
         });
         }
