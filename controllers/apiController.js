@@ -62,9 +62,9 @@ module.exports = function(app) {
         console.log("SEARCHES END")
         for (let i in searches) {
             console.log("SEARCH = " + searches[i]);
-            s3.downloadFile('ff-saved-queries', search._id + '.json', function(err, data) {
+            s3.downloadFile('ff-saved-queries', searches[i]._id + '.json', function(err, data) {
             //fs.readFile('https://ff-saved-queries.s3.us-east-2.amazonaws.com/' + search.id + '.json', function (err, data) {
-            console.log("file name = " + search._id + ".json")
+            console.log("file name = " + searches[i]._id + ".json")
             if (err) {console.log('PROCESS SEARCH ERROR = ' + err);}
             console.log("data = " + JSON.stringify(data));
             //query = bufferToString.buffer2str(data.Body.buffer, false);
@@ -80,19 +80,19 @@ module.exports = function(app) {
             axios.defaults.headers.common['Authorization'] = process.env.RESCUEGROUPS_API;
             axios.defaults.headers.post['Content-Type'] = 'application/vnd.api+json';
 
-            axios.post('https://api.rescuegroups.org/v5/public/animals/search/available?sort=animals.distance&fields[animals]=id&limit=25', 
+            axios.post('https://api.rescuegroups.org/v5/public/animals/search/available?sort=animals.distance&fields[animals]=id&limit=1', 
             query
             )
                 .then(function (response) {
                 //console.log('SUCCESS RESPONSE = ' + JSON.stringify(response));
-                console.log("SEARCH = " + JSON.stringify(search))
+                console.log("SEARCH = " + JSON.stringify(searches[i]))
                 //console.log("RESPONSE = " + cleanStringify(response))
                 // deviceToken, badge, sound, alert, payload, topic)
-                console.log("TOKEN = " + search.searchesWithIDs[0].token);
+                console.log("TOKEN = " + searches[i].searchesWithIDs[0].token);
                 if(response && response.data && response.data.meta && response.data.meta.count) {
                     if (response.data.meta.count > 0) {
                         sendPush.sendPushTest(
-                            search.searchesWithIDs[0].token,
+                            searches[i].searchesWithIDs[0].token,
                             0,
                             "ping.aiff",
                             response.data.meta.count + ' matches found for the saved search you named: ' + searches[i].name,
