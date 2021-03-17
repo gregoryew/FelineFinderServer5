@@ -51,7 +51,7 @@ note.badge = 3;
 note.sound = "ping.aiff";
 note.alert = "\uD83D\uDCE7 \u2709 You have a new message";
 note.payload = {'messageFrom': 'John Appleseed'};
-note.topic = "com.gregsiosapps.TestAPN"
+note.topic = "com.gregorysiosgames.catapp"
 */
 
 apnProvider.send(note, deviceToken).then( (result) => {
