@@ -96,10 +96,19 @@ module.exports = function(app) {
                             0,
                             "ping.aiff",
                             response.data.meta.count + ' matches found for the saved search you named: ' + searches[i].name,
-                            {'messageFrom': 'Feline Finder'},
+                            {"queryID": search[i]._id},
                             "com.gregorysiosgames.catapp")
                         }
                         console.log("Sending Message")
+                        Search.findByIdAndUpdate(search[i]._id, {
+                            lastRun: Date.now(),
+                            times: 1,
+                            success: true,
+                            sentPush: Date.now()
+                        }, function(err, search) {
+                            if (err) throw err;
+                        });           
+                        console.log("Updating Message")
                     }
                 })
                 .catch(function (error) {
