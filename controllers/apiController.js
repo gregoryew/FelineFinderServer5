@@ -90,7 +90,7 @@ module.exports = function(app) {
                             "ping.aiff",
                             response.data.meta.count + ' matches found for the saved search you named: ' + search.name,
                             {'messageFrom': 'Feline Finder'},
-                            "com.gregsiosapps.TestAPN")
+                            "com.gregorysiosgames.catapp")
                         }
                         console.log("Sending Message")
                     }

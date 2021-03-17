@@ -34,6 +34,10 @@ var options = {
   production: false
 };
 
+console.log("@@@@@@@ OPTIONS BEGIN")
+console.log(JSON.stringify(options))
+console.log("@@@@@@@ OPTIONS END")
+
 var apnProvider = new apn.Provider(options);    
 
 var note = new apn.Notification();
