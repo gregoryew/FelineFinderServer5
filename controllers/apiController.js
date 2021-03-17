@@ -78,11 +78,12 @@ module.exports = function(app) {
             axios.defaults.headers.common['Authorization'] = process.env.RESCUEGROUPS_API;
             axios.defaults.headers.post['Content-Type'] = 'application/vnd.api+json';
 
-            axios.post('https://api.rescuegroups.org/v5/public/animals/search/available?sort=animals.distance&fields[animals]=id,name,breedPrimary,ageGroup,sex,updatedDate,birthDate,availableDate,sizeGroup,descriptionHtml,descriptionText,status&limit=25', 
+            axios.post('https://api.rescuegroups.org/v5/public/animals/search/available?sort=animals.distance&fields[animals]=id&limit=25', 
             query
             )
                 .then(function (response) {
                 //console.log('SUCCESS RESPONSE = ' + JSON.stringify(response));
+                console.log("SEARCH = " + JSON.stringify(search))
                 console.log("RESPONSE = " + cleanStringify(response))
                 // deviceToken, badge, sound, alert, payload, topic)
                 console.log("TOKEN = " + search.searchesWithIDs[0].token);
