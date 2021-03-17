@@ -5,13 +5,13 @@ const s3 = require('./s3');
 const fs = require('fs');
 
 sendPushTest = function(deviceToken, badge, sound, alert, payload, topic) {
-  fs.exists(appRoot + '/controllers/AuthKey_6P7YN9TBQF.p8', (exists) => {
-    if (!exists) {s3.downloadFile('ff-saved-queries', 'AuthKey_6P7YN9TBQF.p8', function(error, data) {
+  fs.exists(appRoot + '/controllers/AuthKey_93W3KKU5K6.p8', (exists) => {
+    if (!exists) {s3.downloadFile('ff-saved-queries', 'AuthKey_93W3KKU5K6.p8', function(error, data) {
       console.log("ERROR BEGIN")
       console.log(error)
       console.log("ERROR END")
-      console.log("FILE = " + appRoot + "/controllers/AuthKey_6P7YN9TBQF.p8");      
-      fs.writeFileSync(appRoot + '/controllers/AuthKey_6P7YN9TBQF.p8', String.fromCharCode.apply(this, data.Body))
+      console.log("FILE = " + appRoot + "/controllers/AuthKey_93W3KKU5K6.p8");      
+      fs.writeFileSync(appRoot + '/controllers/AuthKey_93W3KKU5K6.p8', String.fromCharCode.apply(this, data.Body))
       console.log("CERT FILE BEGINS")
       console.log(appRoot + process.env.apnKey)
       console.log("CONTENTS BEGIN")
@@ -27,7 +27,7 @@ sendPushTest = function(deviceToken, badge, sound, alert, payload, topic) {
 sendPush = function(deviceToken, badge, sound, alert, payload, topic) {
 var options = {
   token: {
-  key: appRoot + '/controllers/AuthKey_6P7YN9TBQF.p8',
+  key: appRoot + '/controllers/AuthKey_93W3KKU5K6.p8',
   keyId: process.env.apnKeyId,
   teamId: process.env.apnTeamID
   },
