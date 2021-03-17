@@ -100,7 +100,7 @@ module.exports = function(app) {
                             "com.gregorysiosgames.catapp")
                         }
                         console.log("Sending Message")
-                        Search.findByIdAndUpdate(search[i]._id, {
+                        Searches.findByIdAndUpdate(search[i]._id, {
                             lastRun: Date.now(),
                             times: 1,
                             success: true,
