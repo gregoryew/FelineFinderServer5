@@ -96,11 +96,11 @@ module.exports = function(app) {
                             0,
                             "ping.aiff",
                             response.data.meta.count + ' matches found for the saved search you named: ' + searches[i].name,
-                            {"queryID": search[i]._id},
+                            {"queryID": searches[i]._id},
                             "com.gregorysiosgames.catapp")
                         }
                         console.log("Sending Message")
-                        Searches.findByIdAndUpdate(search[i]._id, {
+                        Searches.findByIdAndUpdate(searches[i]._id, {
                             lastRun: Date.now(),
                             times: 1,
                             success: true,
