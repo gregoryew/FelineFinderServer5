@@ -31,7 +31,7 @@ var options = {
   keyId: process.env.apnKeyId,
   teamId: process.env.apnTeamID
   },
-  production: false
+  production: true
 };
 
 var apnProvider = new apn.Provider(options);    
