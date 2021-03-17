@@ -99,7 +99,8 @@ module.exports = function(app) {
                 console.log('ERROR = ' + error);
                 });
         });
-        } 
+        }
+        res.send("Done"); 
     }
     
     function cleanStringify(object) {
