@@ -11,9 +11,9 @@ const s3 = new AWS.S3({
 const uploadFile = (bucketName, fileName, query) => {
     query = query.replace('\\', '')
     console.log('!@!@! query after replace = ' + query);
-    query = query.slice(0, -1);
+    query = query.substr(0, query.length - 1);
     console.log('!@!@! query after replace = ' + query);
-    query = query.slice(0, 1);
+    query = query.substr(1, query.length);
     console.log('!@!@! query after replace = ' + query);
     query = JSON.parse(query)
     query.data.filterRadius.miles = parseInt(query.data.filterRadius.miles)
