@@ -168,6 +168,9 @@ module.exports = function(app) {
            if (err) throw err;
            s3.downloadFile('ff-saved-queries', req.params.id + '.json', function(err, data) {
                if (err) throw err;
+               console.log("S3 Query Data Begin")
+               console.log(data)
+               console.log("S3 Query Data End")
                search.query = data
                res.send(search)
            });
