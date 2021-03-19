@@ -171,8 +171,7 @@ module.exports = function(app) {
                console.log("S3 Query Data Begin")
                console.log(String.fromCharCode.apply(this, data.Body))
                console.log("S3 Query Data End")
-               search.query = String.fromCharCode.apply(this, data.Body)
-               res.send(search)
+               res.send(String.fromCharCode.apply(this, data.Body))
            });
        });
     });
