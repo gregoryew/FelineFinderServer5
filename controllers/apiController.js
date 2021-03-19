@@ -164,13 +164,14 @@ module.exports = function(app) {
     })
 
     app.get('/api/search/:id', function(req, res) {
-       
        Searches.findById({ _id: req.params.id }, function(err, search) {
            if (err) throw err;
-           
-           res.send(search);
+           s3.downloadFile('ff-saved-queries', req.params.id + '.json', function(err, data) {
+               if (err) throw err;
+               search.query = data
+               res.send(search)
+           });
        });
-        
     });
     
     app.post('/api/user', function(req, res) {
