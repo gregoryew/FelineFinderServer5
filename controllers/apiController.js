@@ -244,10 +244,11 @@ module.exports = function(app) {
     });
     
     app.delete("/api/search/:name", (req, res) => {
- 
-        const name = req.params.name || req.query.name;
 
         console.log("delete path");
+
+        const name = req.params.name || req.query.name;
+
         console.log("delete name = |" + name + "|");
 
         Searches.findByIdAndRemove(name, function(err) {
