@@ -268,12 +268,12 @@ module.exports = function(app) {
         console.log("delete name = |" + req.body.name + "|");
         console.log("delete name = |" + req.body.query + "|");
 
-        Searches.findByIdAndRemove(req.body.name, function(err) {
-            if (err) {
-                console.log('delete failed name = ' + req.body.name + ' the err is ' + err.String);
-                throw err;
+        db.Searches.remove(
+            {name: {$eq: req.body,name}}, function(err, obj) {
+                if (err) throw err;
+                console.log(obj.result.n + "document(s) deleted");
+                res.send('Success');
             }
-            res.send('Success');
-        })
+        )
     });
 }
