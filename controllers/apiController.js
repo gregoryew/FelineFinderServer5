@@ -268,8 +268,10 @@ module.exports = function(app) {
         console.log("delete name = |" + req.body.name + "|");
         console.log("delete name = |" + req.body.query + "|");
 
+        var qry = {name: `${req.body.name}`}
+
         searches.remove(
-            {name: {$eq: req.body,name}}, function(err, obj) {
+            qry, function(err, obj) {
                 if (err) throw err;
                 console.log(obj.result.n + "document(s) deleted");
                 res.send('Success');
