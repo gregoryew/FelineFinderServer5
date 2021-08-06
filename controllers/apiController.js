@@ -243,15 +243,37 @@ module.exports = function(app) {
         
     });
     
+    app.delete("/api/search/:name", (req, res) => {
+ 
+        const name = req.params.name || req.query.name;
+
+        console.log("delete path");
+        console.log("delete name = |" + name + "|");
+
+        Searches.findByIdAndRemove(name, function(err) {
+            if (err) {
+                console.log('delete failed name = ' + name + ' the err is ' + err.String);
+                throw err;
+            }
+            res.send('Success');
+        })
+
+    });
+
+/*
     app.delete('/api/search', function(req, res) {
         
+        console.log("delete name = |" + req. + "|");
+        console.log("delete name = |" + req.body.name + "|");
+
         Searches.findByIdAndRemove(req.body.name, function(err) {
             if (err) {
-                console.log('delete failed name = ' + req.body.name + ' the err is ' + err.String)
+                console.log('delete failed name = ' + req.body.name + ' the err is ' + err.String);
                 throw err;
             }
             res.send('Success');
         })
          
     });
+*/
 }
