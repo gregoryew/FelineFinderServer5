@@ -271,7 +271,7 @@ module.exports = function(app) {
         var qry = {name: `${req.body.name}`}
         console.log(qry);
 
-        searches.remove(
+        Searches.remove(
             qry, function(err, obj) {
                 if (err) throw err;
                 console.log(obj.result.n + "document(s) deleted");
