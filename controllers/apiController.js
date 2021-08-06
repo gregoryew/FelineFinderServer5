@@ -261,11 +261,12 @@ module.exports = function(app) {
 
     });
 
-/*
     app.delete('/api/search', function(req, res) {
         
-        console.log("delete name = |" + req. + "|");
+        console.log("app.delete");
+        console.log("delete name = |" + req.params + "|");
         console.log("delete name = |" + req.body.name + "|");
+        console.log("delete name = |" + req.body.query + "|");
 
         Searches.findByIdAndRemove(req.body.name, function(err) {
             if (err) {
@@ -274,7 +275,5 @@ module.exports = function(app) {
             }
             res.send('Success');
         })
-         
     });
-*/
 }
