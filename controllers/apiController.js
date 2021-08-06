@@ -274,7 +274,6 @@ module.exports = function(app) {
         Searches.remove(
             qry, function(err, obj) {
                 if (err) throw err;
-                console.log(obj.result.count + "document(s) deleted");
                 res.send('Success');
             }
         )
