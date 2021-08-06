@@ -269,6 +269,7 @@ module.exports = function(app) {
         console.log("delete name = |" + req.body.query + "|");
 
         var qry = {name: `${req.body.name}`}
+        console.log(qry);
 
         searches.remove(
             qry, function(err, obj) {
