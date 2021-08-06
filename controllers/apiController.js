@@ -246,7 +246,10 @@ module.exports = function(app) {
     app.delete('/api/search', function(req, res) {
         
         Searches.findByIdAndRemove(req.body.name, function(err) {
-            if (err) throw err;
+            if (err) {
+                console.log('delete failed name = ' + req.body.name + ' the err is ' + err.String)
+                throw err;
+            }
             res.send('Success');
         })
          
