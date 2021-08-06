@@ -268,7 +268,7 @@ module.exports = function(app) {
         console.log("delete name = |" + req.body.name + "|");
         console.log("delete name = |" + req.body.query + "|");
 
-        db.Searches.remove(
+        Searches.remove(
             {name: {$eq: req.body,name}}, function(err, obj) {
                 if (err) throw err;
                 console.log(obj.result.n + "document(s) deleted");
