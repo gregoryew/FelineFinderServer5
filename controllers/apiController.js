@@ -202,6 +202,7 @@ module.exports = function(app) {
         const query2 = req.body.query;
         console.log('REQ = ' + JSON.stringify(req.body));
         console.log('QUERY2 = ' + JSON.stringify(query2));
+
         if (req.body.id) {
             Search.findByIdAndUpdate(req.body.id, {
                 userId: req.body.userId,
