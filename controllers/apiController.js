@@ -262,14 +262,12 @@ module.exports = function(app) {
 
     });
 
-    app.delete('/api/search', function(req, res) {
+    app.get('/api/search/delete/:name', function(req, res) {
         
         console.log("app.delete");
-        console.log("delete name = |" + req.params + "|");
-        console.log("delete name = |" + req.body.name + "|");
-        console.log("delete name = |" + req.body.query + "|");
+        console.log("delete name = |" + req.params.name + "|");
 
-        var qry = {name: `${req.body.name}`}
+        var qry = {name: `${req.params.name}`}
         console.log(qry);
 
         Searches.remove(
